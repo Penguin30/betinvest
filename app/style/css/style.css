@@ -101,6 +101,11 @@ a {
       -webkit-background-size: 95px 100px;
               background-size: 95px 100px;
       margin: -10px 35px; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .info_btn {
+      -webkit-background-size: 95px 100px;
+              background-size: 95px 100px;
+      margin: -10px 35px; } }
 
 .learn_m {
   font-size: 0.875em; }
@@ -124,6 +129,11 @@ a {
       width: 325px;
       height: 187.64px;
       margin: 93.82px 0; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .hexagon {
+      width: 258px;
+      height: 148.96px;
+      margin: 74.48px 0; } }
 
 .hexagon:before,
 .hexagon:after {
@@ -143,6 +153,11 @@ a {
     .hexagon:after {
       border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .hexagon:before,
+    .hexagon:after {
+      border-left: 129px solid transparent;
+      border-right: 129px solid transparent; } }
 
 .hexagon:before {
   bottom: 100%;
@@ -153,6 +168,9 @@ a {
   @media (min-width: 576px) and (max-width: 767px) {
     .hexagon:before {
       border-bottom: 93.82px solid #000000ab; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .hexagon:before {
+      border-bottom: 74.48px solid #000000ab; } }
 
 .hexagon:after {
   top: 100%;
@@ -164,6 +182,9 @@ a {
   @media (min-width: 576px) and (max-width: 767px) {
     .hexagon:after {
       border-top: 93.82px solid #000000ab; } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    .hexagon:after {
+      border-top: 74.48px solid #000000ab; } }
 
 .main_nav {
   position: absolute;
@@ -347,8 +368,8 @@ html {
               -ms-transform: translate(7%, 7%);
                   transform: translate(7%, 7%); } }
     .header .nav .nav_item {
+      display: none;
       z-index: 1;
-      display: inline-block;
       position: relative;
       color: #ffffff;
       font-size: 1.125em;
@@ -945,6 +966,15 @@ html {
           background-size: cover;
   position: center center;
   overflow: hidden; }
+
+@media (min-width: 320px) and (max-width: 575px) and (min-width: 320px) and (max-width: 575px) {
+  .sect_t .main_nav {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 575px) and (min-width: 768px) and (max-width: 991px) {
+  .sect_t .main_nav {
+    top: 33%;
+    right: 3%; } }
   .sect_t .sect_t_cont {
     position: relative; }
     .sect_t .sect_t_cont .hexagon:before, .sect_t .sect_t_cont .hexagon:after {
@@ -955,10 +985,54 @@ html {
     .sect_t .sect_t_cont .hex_1 {
       margin-top: 8%;
       margin-left: 35px; }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .sect_t .sect_t_cont .hex_1 {
+          margin-top: -webkit-calc(17% - 50px);
+          margin-top: calc(17% - 50px);
+          margin-left: -webkit-calc(10% - 50px);
+          margin-left: calc(10% - 50px); } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .sect_t .sect_t_cont .hex_1 {
+          margin-top: -webkit-calc(16% - 50px);
+          margin-top: calc(16% - 50px);
+          margin-left: -webkit-calc(5% - 50px);
+          margin-left: calc(5% - 50px); } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .sect_t .sect_t_cont .hex_1 {
+          margin-left: -webkit-calc(4% - 50px);
+          margin-left: calc(4% - 50px);
+          margin-top: -webkit-calc(-2% - 50px);
+          margin-top: calc(-2% - 50px); } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .sect_t .sect_t_cont .hex_1 {
+          margin-top: -webkit-calc(-6% - 50px);
+          margin-top: calc(-6% - 50px);
+          margin-left: -webkit-calc(7% - 50px);
+          margin-left: calc(7% - 50px); } }
     .sect_t .sect_t_cont .hex_4 {
       -webkit-transform: translate(71%, -48%);
           -ms-transform: translate(71%, -48%);
               transform: translate(71%, -48%); }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .sect_t .sect_t_cont .hex_4 {
+          -webkit-transform: translate(60%, -48%);
+              -ms-transform: translate(60%, -48%);
+                  transform: translate(60%, -48%); } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .sect_t .sect_t_cont .hex_4 {
+          -webkit-transform: translate(34%, -158%);
+              -ms-transform: translate(34%, -158%);
+                  transform: translate(34%, -158%); } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .sect_t .sect_t_cont .hex_4 {
+          -webkit-transform: translate(86%, -104%);
+              -ms-transform: translate(86%, -104%);
+                  transform: translate(86%, -104%); } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .sect_t .sect_t_cont .hex_4 {
+          -webkit-transform: translate(107%, -98%);
+              -ms-transform: translate(107%, -98%);
+                  transform: translate(107%, -98%); } }
     .sect_t .sect_t_cont .t_hex_info {
       font-size: 0.875em;
       margin-top: -5px;
@@ -968,18 +1042,75 @@ html {
       .sect_t .sect_t_cont .t_hex_info .hex_tittle {
         margin-bottom: 26px;
         font-size: 1.875em; }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .sect_t .sect_t_cont .t_hex_info .hex_text {
+          display: none; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .sect_t .sect_t_cont .t_hex_info .hex_text {
+          height: 100px; } }
     .sect_t .sect_t_cont .info_btn {
       -webkit-transform: translate(46%, 10%);
           -ms-transform: translate(46%, 10%);
               transform: translate(46%, 10%); }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .sect_t .sect_t_cont .info_btn {
+          -webkit-transform: translate(22%, 10%);
+              -ms-transform: translate(22%, 10%);
+                  transform: translate(22%, 10%); } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .sect_t .sect_t_cont .info_btn {
+          -webkit-transform: translate(14%, -25%);
+              -ms-transform: translate(14%, -25%);
+                  transform: translate(14%, -25%); } }
     .sect_t .sect_t_cont .watch_video {
       -webkit-transform: translate(106%, -4%);
           -ms-transform: translate(106%, -4%);
               transform: translate(106%, -4%); }
+      @media (min-width: 320px) and (max-width: 575px) {
+        .sect_t .sect_t_cont .watch_video {
+          -webkit-transform: translate(15%, -8%);
+              -ms-transform: translate(15%, -8%);
+                  transform: translate(15%, -8%); } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .sect_t .sect_t_cont .watch_video {
+          -webkit-transform: translate(112%, -110%);
+              -ms-transform: translate(112%, -110%);
+                  transform: translate(112%, -110%); } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .sect_t .sect_t_cont .watch_video {
+          -webkit-transform: translate(-123%, 90%);
+              -ms-transform: translate(-123%, 90%);
+                  transform: translate(-123%, 90%); } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .sect_t .sect_t_cont .watch_video {
+          -webkit-transform: translate(-135%, 94%);
+              -ms-transform: translate(-135%, 94%);
+                  transform: translate(-135%, 94%); } }
       .sect_t .sect_t_cont .watch_video .video_btn {
         -webkit-transform: translate(24%, -148%);
             -ms-transform: translate(24%, -148%);
                 transform: translate(24%, -148%); }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .sect_t .sect_t_cont .watch_video .video_btn {
+            -webkit-transform: translate(7%, -163%);
+                -ms-transform: translate(7%, -163%);
+                    transform: translate(7%, -163%); } }
+    @media (min-width: 320px) and (max-width: 575px) {
+      .sect_t .sect_t_cont .hex:first-of-type {
+        margin-left: -webkit-calc(33% - 50px);
+        margin-left: calc(33% - 50px); } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .sect_t .sect_t_cont .hex:first-of-type {
+        margin-left: -webkit-calc(30% - 50px);
+        margin-left: calc(30% - 50px); } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .sect_t .sect_t_cont .hex:first-of-type {
+        margin-left: -webkit-calc(53% - 50px);
+        margin-left: calc(53% - 50px); } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .sect_t .sect_t_cont .hex:first-of-type {
+        margin-left: -webkit-calc(53% - 50px);
+        margin-left: calc(53% - 50px); } }
 
 .sect_four {
   height: 100vh;

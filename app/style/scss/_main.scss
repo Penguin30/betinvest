@@ -4,6 +4,7 @@ html {
 }
 
 .header{
+
 	background-color: $black;
 	@extend %USHText;
 	@extend %textUp;
@@ -26,6 +27,7 @@ html {
 	}
 	
 	.nav{
+
 		display: flex;
     	align-items: center;
 		.hamburder_icon{
@@ -36,6 +38,7 @@ html {
 		}
 		
 		.nav_item{
+			
 			z-index: 1;
 			display: inline-block;
 			position: relative;

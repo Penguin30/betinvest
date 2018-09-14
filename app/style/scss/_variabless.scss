@@ -192,6 +192,10 @@ a{
 		background-size: 95px 100px;
 		margin: -10px 35px
 	}
+	@include xs {
+		background-size: 95px 100px;
+		margin: -10px 35px
+	}
 }
 .learn_m{
 	@extend %USHText;
@@ -215,9 +219,14 @@ a{
     margin: 93.82px 0;
       }
   @include sm{
-    width: 325px; 
-      height: 187.64px;
-      margin: 93.82px 0;
+    	width: 325px; 
+      	height: 187.64px;
+      	margin: 93.82px 0;
+    }
+    @include xs{
+    	width: 258px; 
+  		height: 148.96px;
+  		margin: 74.48px 0;
     }
   }
 .hexagon:before,
@@ -236,6 +245,10 @@ a{
     border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent;
   }
+  @include xs{
+    border-left: 129px solid transparent;
+  	border-right: 129px solid transparent;
+  }
 }
 
 .hexagon:before {
@@ -247,6 +260,9 @@ a{
   @include sm{
     border-bottom: 93.82px solid #000000ab;
   }
+  @include xs{
+    border-bottom: 74.48px solid #000000ab;
+  }
 }
 .hexagon:after {
   top: 100%;
@@ -257,6 +273,9 @@ a{
   }
   @include sm{
     border-top: 93.82px solid #000000ab;
+  }
+  @include xs{
+    border-top: 74.48px solid #000000ab;
   }
 }
 .main_nav{ 
