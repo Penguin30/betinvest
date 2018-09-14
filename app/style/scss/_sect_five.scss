@@ -1,0 +1,83 @@
+.sect_five{
+	height: 100vh;
+	background: url('../../img/sect_five_bg.jpg');
+	overflow: hidden;
+	.sect_five_cont{
+		position: relative;
+		.hexagon{
+			&:before, &:after{
+				margin-left: 0%;
+			}
+		}
+		.hex_1{
+			.hex_title{
+				color: $orange;
+				font-size: 1.5em;
+			}
+			margin-top: 8%;
+			margin-left: 35px;
+			margin-right: 60px;
+		}
+		.t_hex_info{
+			@extend %RobotoText;
+			color: $white;
+			font-size: 0.875em;
+			margin-top: -5px;
+			@include paddingLR(66px, 66px);
+			text-align: center;
+			.hex_tittle{
+				@extend %USHText;
+				margin-bottom: 26px;
+				font-size: 1.875em;
+			}
+		}
+		.info_btn{
+			transform: translate(45%, 10%);
+		}
+		.img_cont{
+			margin-left: 3rem;
+			@include lg {
+				margin-left: -2rem;
+			}
+			.overlay{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 1;
+//				background: url('../../img/hex4.png') no-repeat;
+				.overlay_text{
+					position: absolute;
+					color: $white;
+					@extend %USHText;
+					font-size: 0.875em;
+					.ov_txt{
+						@extend %PTSansText;
+						font-size: 0.75em;
+					}
+				}
+			}
+			.hex_tb_1{
+				margin: -12% 10%;
+			}
+			.hex_tb_2{
+				margin: -50% 122%;
+			}
+			.hex_tb_3{
+				margin: -53% 10%;
+			}
+			.hex_tb_4{
+				position: relative;
+				margin: 3% 122%;
+			}
+				
+			.hex_tb_5{
+				margin: -59% 10% 24%;
+			}
+		}
+	}
+}
+

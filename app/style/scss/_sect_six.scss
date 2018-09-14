@@ -1,0 +1,174 @@
+.sect_six{
+	position: relative;
+	background: url('../../img/sect_six_bg.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow: hidden;
+	height: 100vh;
+	.sect_six_cont{
+		position: relative;
+		height: 940px;
+		.point_hex{
+			position: relative;
+  			width: 300px; 
+  			height: 173.21px;
+  			background-color: #000000ab;
+  			margin: 86.60px 0;
+		}
+		.point_hex:before,
+		.point_hex:after {
+		  content: "";
+		  position: absolute;
+		  width: 0;
+		  margin-left: -50%;
+		  border-left: 150px solid transparent;
+		  border-right: 150px solid transparent;
+		}
+
+		.point_hex:before {
+		  bottom: 100%;
+		  border-bottom: 86.60px solid #000000ab;
+		}
+
+		.point_hex:after {
+		  top: 100%;
+		  width: 0;
+		  border-top: 86.60px solid #000000ab;
+		}
+
+		.point{
+			color: $white;
+			text-align: center;
+			position: relative;
+			display: none;
+			.hex_socials{
+				display: flex;
+				justify-content: center;
+				.social_icon{
+					margin-top: -7px;
+					font-size: 16px;
+					color: $white;
+					margin-left: 7px;
+					&:hover {
+						color: $orange;
+					}	
+				}
+
+			}
+		}
+
+		.hexagon{
+			&:before, &:after{
+				margin-left: 0;
+			}
+		}
+		.hex_1{
+			
+			position: absolute;
+			top: 27%;
+			left: 9%;
+			color: $white;
+			@include md {
+				top: 50%;
+				left: 26%;
+			}
+			.t_hex_info{
+				@extend %RobotoText;
+				color: $white;
+				font-size: 0.875em;
+				margin-top: -5px;
+				@include paddingLR(66px, 66px);
+				text-align: center;
+				@inlcude md {
+					@include paddingLR(40px, 40px);
+				}
+				.hex_title{
+					@extend %USHText;
+					font-size: 1.5em;
+					margin-bottom: 40px;
+				}
+			}
+			.sect_six_btn{
+				z-index: 10;
+   				position: absolute;
+    			overflow: visible;
+				transform: translate(227%, 37%);
+				backgroung: none;
+				@include md {
+					transform: translate(192%, 37%);	
+				}				
+			}
+		}
+	}
+	.main_nav {
+		top: 25%;
+	}
+	
+	// Map marks
+	.mp-marks-item {
+		position: absolute;
+	}
+	
+	.mp-marks-item.one {
+		top: 25%;
+		left: 43%;
+	}
+	
+	.mp-marks-item.two {
+		top: 25%;
+		left: 52%;
+	} 
+	.mp-marks-item.third {
+		top: 21%;
+		left: 54%;
+	}
+	
+	.mp-marks-item.fourth {
+		top: 20%;
+		left: 57.5%;
+	}
+	
+	.mp-marks-item.five {
+		top: 16.5%;
+		left: 37%;
+	}
+	
+	.mp-marks-item.six {
+		top: 100px;
+		left: 47px;
+		@include lg {
+			top: 114px;
+			left: -39px;
+		}
+	}
+}
+
+.sect_six .sect_six_cont .hex_1 .hex_text {
+	@include md {
+		font-size: 1.2em;
+	}
+}
+
+.sect_six .sect_six_cont .hex_1 .t_hex_info .orange_tittle.hex_tittle {
+	@include md {
+		font-size: 2em;
+	}
+} 
+
+.sect_six .sect_six_cont .scroll_down {
+	@include lg {
+			
+	}
+	@include md {
+		bottom: -9%;
+		left: 53%;
+		transform: translateX(-50%);
+	}
+}
+
+.sect_six .sect_six_cont .join_us {
+	@include md {
+		bottom: -10%;
+	}
+}
+

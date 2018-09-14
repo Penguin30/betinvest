@@ -1,0 +1,191 @@
+//keyframes
+
+
+@keyframes animatedBackground {
+    0 {
+        transform: translate(-550px, 0px)
+    }
+    100% {
+        transform: translate( 0px, -160px)
+    }
+}
+@keyframes balkon {
+
+    0 {
+    	transform: scale(1.04)
+    }
+	25% {
+		transform: scale(1.03)
+	}
+	50% {
+		transform: scale(1.02)
+	}
+	75%{
+		transform: scale(1.01)
+	}
+    100% {
+        transform: scale(1.0)
+    }
+
+}
+@keyframes Ball{
+    0 {
+        transform: translate(0px, 30px)
+    }
+    50%{
+		transform: translate(0px, -39px)
+    }
+    100% {
+        transform: translate(0px, 9px)
+    }
+}
+@keyframes MouseOn{
+	0{
+		transform: translate(0px, 0px)
+	}
+	50%{
+		transform: translate(0px, -11px)	
+	}
+	100%{
+		transform: translate(0px, 0px)	
+	}
+}
+
+
+//animate classes
+
+#balkon{
+	background-image: url("../../img/bg_3.png");
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: scale(1.04);
+	background-position-y: 78%;
+	animation: balkon 6s linear forwards;
+	@include md{
+		animation: none;
+		transform: scale(1.0);
+		background-position-y: -250px;
+		background-position-x: 51%;
+		background-size: 240%;
+	}
+	@include lg{
+		animation: none;
+		background-position-x: 39%;
+	}
+	@include sm{
+		animation: none;	
+	}
+	@include xs{
+		animation: none;
+		background-position-x: 58%;
+	}
+}
+
+#fly_car{
+	position: absolute;
+	transform: translate(-7%, 78%);
+	@include md{
+		transform: translate(-31%, 79%) scale(0.8);
+	} 
+	@include lg{
+		transform: translate(-34%, 80%) scale(0.8);
+	}
+	@include sm{
+		transform: translate(-41%, 99%) scale(0.8);
+	}
+	@include xs{
+		transform: translate(-41%, 99%) scale(0.8);
+	}
+
+
+}
+
+.ball_1{
+	animation: Ball 2s linear forwards infinite;
+	@include md{
+		transform: translate(-89%, 213%) scale(0.6);
+	}
+	@include sm{
+		transform: translate(-89%, 95%) scale(0.6);
+	}
+}
+.ball_2{
+	animation: Ball 2.9s linear forwards infinite;
+	animation-delay: 0.5s;
+	@include md{
+		transform: translate(-93%, 217%) scale(0.6);
+	}	
+	@include sm{
+		transform: translate(-93%, 82%) scale(0.6);
+	}
+}
+.ball_3{
+	animation: Ball 2.1s linear forwards infinite;
+	animation-delay: 0s;
+	@include md{
+		transform: translate(-161%, 238%) scale(0.6);
+	}	
+	@include sm{
+		transform: translate(-161%, 72%) scale(0.6);
+	}
+}
+.ball_4{
+	animation: Ball 2.9s linear forwards infinite;
+	animation-delay: 0s;
+	@include md{
+		transform: translate(-361%, 395%) scale(0.6);
+	}
+	@include sm{
+		transform: translate(-361%, 69%) scale(0.6);
+	}
+}
+.ball_5{
+	animation: Ball 2.9s linear forwards infinite;
+	animation-delay: 0.5s;
+	@include md{
+		transform: translate(-813%, 823%) scale(0.8);
+	}	
+	@include sm{
+		transform: translate(-813%, -31%) scale(0.8);
+	}
+}
+#earth_1_img{
+
+	width:100%;
+	top: -10%;
+	animation: animatedBackground 7.0s linear forwards;
+	@include md{
+		animation: none;
+		transform: translate(-13%, 30%) scale(2.5);
+		
+	}
+	@include lg{
+		transform: translate(0%, 0%) scale(1.5);
+	}
+	
+	@include sm{
+		animation: none;
+		transform: translate(-24%, 73%) scale(2.5);
+	}
+	@include xs{
+		animation: none;
+		transform: translate(3%, 121%) scale(2.5);
+	}
+	@include xl{
+		
+	}
+	
+	
+}
+.earth_1{
+	position: absolute;
+	z-index: -1;
+	@include ml{
+		transform: translate(0%, 25%);
+		height: 100%;
+	}
+	@include lg{
+		transform: translate(0%, 53%);
+	}
+}

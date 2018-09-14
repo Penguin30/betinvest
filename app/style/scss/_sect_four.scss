@@ -1,0 +1,50 @@
+.sect_four{
+	height: 100vh;
+	color: $white;
+	@extend %RobotoText;
+	background: url('../../img/sect_four_bg.jpg') no-repeat;
+	position: center center;
+	overflow: hidden;
+	.sect_four_cont{
+		position: relative;
+		.hexagon{
+			&:before, &:after{
+				margin-left: 0%;
+			}
+		}
+		.hex_2{
+			margin-top: 20%;
+			margin-left: 93px;
+			.hex_tittle{
+				@extend %USHText;
+			}
+		}
+		.hex_1{
+			.hex_tittle{
+				@extend %USHText;
+				font-size: 1.5em;
+			}
+			margin-top: 8%;
+			margin-left: 35px;
+		}
+		.hex_4{
+			.hex_tittle{
+				@extend %USHText;
+			}
+			transform: translate(130%, -48%);
+		}
+		.t_hex_info{
+			font-size: 0.875em;
+			margin-top: -5px;
+			@include paddingLR(66px, 66px);
+			text-align: center;
+			.hex_tittle{
+				margin-bottom: 26px;
+				font-size: 1.875em;
+			}
+		}
+		.info_btn{
+			transform: translate(45%, 10%);
+		}
+	}
+}

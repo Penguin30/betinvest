@@ -1,0 +1,101 @@
+//Roboto
+
+@font-face {
+    font-family:'Roboto';
+    src: url('../../fonts/Roboto Bold.woff2') format('woff2'),
+		url('../../fonts/Roboto Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family:'Roboto';
+    src: url('../../fonts/Roboto Regular.woff2') format('woff2'),
+		url('../../fonts/Roboto Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+//USHC
+
+@font-face {
+    font-family:'Uni Sans Heavy Caps';
+    src: url('../../fonts/Uni Sans Heavy Caps Regular.woff2') format('woff2'),
+		url('../../fonts/Uni Sans Heavy Caps Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00BB;
+}
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../../fonts/UniSansSemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni SansB';
+    src: local('Uni Sans Bold'), local('UniSansBold'),
+        url('../../fonts/UniSansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+//PT Sans
+
+@font-face {
+    font-family:'PT Sans';
+    src: url('../../fonts/PT Sans.woff2') format('woff2'),
+		url('../../fonts/PT Sans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-F6CE;
+}
+
+@font-face {
+    font-family:'PT Sans';
+    src: url('../../fonts/PT Sans Bold.woff2') format('woff2'),
+		url('../../fonts/PT Sans Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-F6CE;
+}
+
+// O
+
+@font-face {
+    font-family:'o';
+    src: url('../../fonts/o Condensed.woff2') format('woff2'),
+		url('o Condensed.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family:'o';
+    src: url('../../fonts/o Light.woff2') format('woff2'),
+		url('../../fonts/o Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+//FontAwesome
+
+@font-face {
+    font-family:'FontAwesome';
+    src: url('FontAwesome Regular.woff2') format('woff2'),
+		url('FontAwesome Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00D8;
+}

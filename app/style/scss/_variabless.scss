@@ -1,0 +1,322 @@
+$orange: #f3a10d;
+$white: #ffffff;
+$black: #000000;
+
+%textUp{
+	text-transform: uppercase;
+} 
+
+.orange{
+	color: $orange;
+}
+.opacity{
+	opacity: 0;
+}
+	
+
+//Media 
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin ml{
+	@media (min-width: 1200px) and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: 320px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin marginLR($marginL, $marginR) {
+ 	margin-left: $marginL;
+ 	margin-right: $marginR;
+ }
+
+ @mixin marginTB($marginT, $marginB) {
+ 	margin-top: $marginT;
+ 	margin-bottom: $marginB;
+ }
+
+ @mixin paddingLR($paddingL, $paddingR) {
+ 	padding-left: $paddingL;
+ 	padding-right: $paddingR;
+ } 
+
+ @mixin paddingTB($paddingT, $paddingB) {
+ 	padding-top: $paddingT;
+ 	padding-bottom: $paddingB;
+ } 
+
+//fonts
+%USHText {
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-weight: 900;
+}
+%USRText{
+	font-family: 'Uni Sans', sans-serif;
+	font-weight: 400;
+}
+%USBText{
+	font-family: 'Uni SansB' sans-serif;
+	font-weight: 700;
+}
+%RobotoBText{
+	font-family: 'RobotoB', sans-serif;
+	font-weight: 700;
+}
+%RobotoText{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+%PTSansText{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+%PTSansBText{
+	font-family: 'PT Sans B', sans-serif;
+	font-weight: 700;
+}
+%OTexl{
+	font-family: 'O', sans-serif;
+	font-weight: 400;
+}
+%OTexl{
+	font-family: 'O L', sans-serif;
+	font-weight: 300;
+}
+%FAText{
+	font-family: 'FontAwesome', sans-serif;
+	font-weight: 400;
+}
+
+//General styles
+html{
+	font-size: 16px;
+}
+a{
+	color: $white;
+	&:hover{
+		color: $orange;
+	}
+}
+.orange_tittle{
+	@extend %USHText;
+	font-size: 1.500em;
+	color: $orange;
+}
+
+
+.scroll_down{
+	@extend %USHText;
+	color: $white;
+	position: absolute;
+    font-size: 0.875em;
+    bottom: 24px;
+    left: 47%;
+    transition: all .5s ease-in-out;
+	@include lg {
+		bottom: 3%;
+	}
+    .anime{
+    	animation: MouseOn 2s ease-in-out forwards infinite;
+    	&:hover{
+    		animation: none;
+    		bottom: 30px;
+
+    	}
+    }
+	p{
+		text-align: center;
+	}
+	@include md{
+		bottom: -29%;
+    	left: 47%;
+	}
+}
+.join_us{
+	@extend %USHText;
+	position: absolute;
+    bottom: 5%;
+    right: 7%;
+	@include lg {
+		bottom: 4%;
+	}
+    @include md{
+    	bottom: -29%;
+    	right: 3%;
+    }
+
+}
+
+//learnBtn
+
+.info_btn {
+	width: 146px;
+    height: 125px;
+    margin: 10px 79px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+   	position: absolute;
+    overflow: visible;
+    background: url(../../img/hex.png) 16px -2px no-repeat;
+	@include md {
+		margin: 27px 105px!important;
+	}
+	@include sm {
+		background-size: 95px 100px;
+		margin: -10px 35px
+	}
+}
+.learn_m{
+	@extend %USHText;
+	font-size: 0.875em;
+	&:hover, &:active{
+  		text-decoration: none;
+  		color: $white;
+  		}
+  	}
+
+//hexagon
+.hexagon{
+  position: relative;
+  width: 432px; 
+  height: 249.42px;
+  background-color: #000000ab;
+  margin: 115.47px 0;
+  @include md{
+      width: 383px;
+      height: 235.64px;
+    margin: 93.82px 0;
+      }
+  @include sm{
+    width: 325px; 
+      height: 187.64px;
+      margin: 93.82px 0;
+    }
+  }
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 216px solid transparent;
+  border-right: 216px solid transparent;
+  margin-left: -50%;
+  @include md{
+    border-left: 190.5px solid transparent;
+      border-right: 190.5px solid transparent;
+  }
+  @include sm{
+    border-left: 162.5px solid transparent;
+      border-right: 162.5px solid transparent;
+  }
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 115.47px solid #000000ab;
+  @include md{
+    border-bottom: 93.82px solid #000000ab;
+  }
+  @include sm{
+    border-bottom: 93.82px solid #000000ab;
+  }
+}
+.hexagon:after {
+  top: 100%;
+  margin-left: -50%;
+  border-top: 115.47px solid #000000ab;
+  @include md{
+    border-top: 93.82px solid #000000ab;
+  }
+  @include sm{
+    border-top: 93.82px solid #000000ab;
+  }
+}
+.main_nav{ 
+	@extend %USHText;
+	position: absolute;
+    top: 46%;
+    right: 8%;
+    @include md{
+    	top: 56%;
+    	right: 3%;
+    }
+	@include sm {
+		top: 56%;
+		right: -9%;
+	}
+	.main_nav_list{
+		list-style: none;
+		display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+		.main_nav_item{
+			a{
+				text-decoration: none;
+				color: rgba(0,0,0, 0);
+				&:hover, &:active {
+					color: $white;
+				}
+			}
+			.main_nav_href{
+				padding-right: 20px;
+				}
+				.main_nav_item_icon{
+					display: inline-block;
+					width: 21px;
+					height: 23px;
+					background: url(../../img/main_nav.png) 0px 25px;
+					&:hover{
+						background: url(../../img/main_nav.png) 0px 0px;
+					}
+				}
+			}			
+	}
+}
+.hex_text{
+	height: 145px;
+	overflow-x: hidden;
+    overflow-y: scroll;
+}
+.hex_text::-webkit-scrollbar {width:0px;}
+.container {
+	height: 100%!important;
+}
+#preloader{
+	background: $black;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	position: fixed;
+	z-index: 100;
+}
+.margin_h{
+	margin-top: 255px;
+}

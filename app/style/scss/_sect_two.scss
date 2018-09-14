@@ -1,0 +1,111 @@
+.sect_two{
+	height: 100vh;
+	background-image: url("../../img/sect_two_bg.jpg");
+	background-size: cover;
+	color: $white;
+	overflow: hidden;
+	.sect_two_container{
+		position: relative;
+		@include lg{
+			max-width: 100vw;
+		}
+		.hexagon{
+			@include lg{
+				width: 409px;
+			}
+			&:before, &:after{
+				margin-left: 0%;
+				@include lg{
+					border-left: 205px solid transparent;
+					border-right: 205px solid transparent;
+				}
+			}
+			.info_btn{
+				margin: 10% 34%;
+			}
+		}
+		.sect_two_hex_1{
+			margin-top: 8%;
+			margin-left: 35px;
+			h3{
+				margin-bottom: 27px;
+			}
+			.hex_text{
+				@extend %RobotoText;
+				font-size: 1em;
+				@include md{
+					height: 100px;
+				}
+				@include lg{
+					height: 120px;
+				}
+			}
+			.info_btn{
+				margin: 5% 34%;
+			}
+		}
+		.sect_two_hex_2{
+			margin-top: 20%;
+			margin-left: 93px;
+			h3{
+				@extend %USHText;
+				margin-bottom: 57px;
+				@include md{
+					margin-bottom: 30px;
+				}
+			}
+			.hex_text{
+				position: relative;
+				@extend %RobotoText;
+				font-size: 1em;
+				@include md{
+					height: 100px;
+				}
+				@include lg{
+					height: 120px;
+				}
+				
+			}
+			.info_btn{
+				margin: -3% 34%;
+			}
+		}
+
+		.watch_video{
+			transform: translate(106%, -4%);
+			.video_btn{
+				margin: -176px 114px;
+			}
+		}
+
+		.sect_two_hex_4{
+			transform: translate(71%, -48%);
+			h3{
+				margin-bottom: 26px;	
+			}
+			.hex_text{
+				@extend %RobotoText;
+				font-size: 0.86em;
+				@include md{
+					height: 100px;
+				}
+				@include lg{
+					height: 110px;
+				}
+			}
+			.info_btn{
+				margin: -1% 34%;
+			}
+		}
+		.main_nav {
+			@include lg{
+				right: 1vw;
+			}
+		}
+		.sect_two_info{
+    		margin-top: -5px;
+			@include paddingLR(66px, 66px);
+			text-align: center;
+		}
+	}
+}
