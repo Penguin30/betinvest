@@ -140,6 +140,13 @@ a{
     transition: all .5s ease-in-out;
 	@include lg {
 		bottom: 3%;
+	}	
+	@include sm {
+		bottom: auto;
+		top: 93%;
+	}	
+	@include xs {
+		bottom: 6%;
 	}
     .anime{
     	animation: MouseOn 2s ease-in-out forwards infinite;
@@ -153,8 +160,12 @@ a{
 		text-align: center;
 	}
 	@include md{
-		bottom: -29%;
-    	left: 47%;
+		bottom: 3%;
+		left: 50%;
+	}
+	@include sm {
+//		bottom: 4%;
+//		left: 50%;
 	}
 }
 .join_us{
@@ -166,8 +177,12 @@ a{
 		bottom: 4%;
 	}
     @include md{
-    	bottom: -29%;
+    	bottom: 3%;
     	right: 3%;
+    }    
+	@include sm{
+    	bottom: 6%;
+    	right: -10%;
     }
 
 }
@@ -191,6 +206,10 @@ a{
 	@include sm {
 		background-size: 95px 100px;
 		margin: -10px 35px
+	}	
+	@include xs {
+		background-size: 95px 100px;
+		margin: 15px 34px
 	}
 }
 .learn_m{
@@ -212,13 +231,18 @@ a{
   @include md{
       width: 383px;
       height: 235.64px;
-    margin: 93.82px 0;
-      }
+      margin: 93.82px 0;
+  }
   @include sm{
-    width: 325px; 
+      width: 325px; 
       height: 187.64px;
       margin: 93.82px 0;
-    }
+  }  
+	@include xs{
+   	  width: 325px; 
+      height: 187.64px;
+      margin: 93.82px 0;
+  }
   }
 .hexagon:before,
 .hexagon:after {
@@ -229,11 +253,15 @@ a{
   border-right: 216px solid transparent;
   margin-left: -50%;
   @include md{
-    border-left: 190.5px solid transparent;
+      border-left: 190.5px solid transparent;
       border-right: 190.5px solid transparent;
   }
   @include sm{
-    border-left: 162.5px solid transparent;
+      border-left: 162.5px solid transparent;
+      border-right: 162.5px solid transparent;
+  }  
+  @include xs{
+      border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent;
   }
 }
@@ -269,8 +297,12 @@ a{
     	right: 3%;
     }
 	@include sm {
-		top: 56%;
+		top: 45%;
 		right: -9%;
+	}	
+	@include xs {
+		top: 36%;
+		right: 2%;
 	}
 	.main_nav_list{
 		list-style: none;
