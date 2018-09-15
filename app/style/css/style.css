@@ -1022,8 +1022,8 @@ html {
 #earth_1_img {
   width: 100%;
   top: -10%;
-  -webkit-animation: animatedBackground 0.5s linear forwards;
-          animation: animatedBackground 0.5s linear forwards; }
+  -webkit-animation: animatedBackground 7.0s linear forwards;
+          animation: animatedBackground 7.0s linear forwards; }
   @media (min-width: 768px) and (max-width: 991px) {
     #earth_1_img {
       -webkit-animation: none;
