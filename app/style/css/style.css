@@ -680,6 +680,7 @@ html {
             font-size: 12px; } }
       .main_sect .main_sect_container .info_about .info_about_text::-webkit-scrollbar {
         width: 0px; }
+<<<<<<< HEAD
       .main_sect .main_sect_container .info_about .info_btn {
         margin: -2px 79px; }
         @media (min-width: 320px) and (max-width: 575px) {
@@ -691,6 +692,17 @@ html {
         @media (min-width: 992px) and (max-width: 1199px) {
           .main_sect .main_sect_container .info_about .info_btn {
             margin: 2% 29%; } }
+=======
+      @media (min-width: 320px) and (max-width: 575px) {
+        .main_sect .main_sect_container .info_about .info_btn {
+          margin: 25px 35px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .main_sect .main_sect_container .info_about .info_btn {
+          margin: -16px 79px; } }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .main_sect .main_sect_container .info_about .info_btn {
+          margin: 2% 29%; } }
+>>>>>>> 4a226943c55caeb8a85dba2a145ca9c7f8f0561f
 
 @media (min-width: 1200px) {
   .fp-tableCell {
