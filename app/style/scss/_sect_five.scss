@@ -9,6 +9,23 @@
 				margin-left: 0%;
 			}
 		}
+		.join_us {
+			@include sm {
+				bottom: 3%;
+			}			
+			@include xs {
+				bottom: 2%;
+			}
+		}
+		.scroll_down {
+			@include sm {
+				top: 95%;
+			}
+			@include xs {
+				top: auto;
+				bottom: 2%;
+			}
+		}
 		.hex_1{
 			.hex_title{
 				color: $orange;
@@ -17,6 +34,15 @@
 			margin-top: 8%;
 			margin-left: 35px;
 			margin-right: 60px;
+			@include md {
+				margin-left: 220px;
+			}
+			@include sm {
+				margin-left: 156px;
+			}			
+			@include xs {
+				margin-left: 155px;
+			}
 		}
 		.t_hex_info{
 			@extend %RobotoText;
@@ -33,12 +59,25 @@
 		}
 		.info_btn{
 			transform: translate(45%, 10%);
+			@include md {
+				margin: -20px 57px !important;
+			}
+			@include sm {
+				margin: -40px 34px !important;
+			}			
+			@include xs {
+				transform: translate(44%, -20%);
+			}
 		}
 		.img_cont{
 			margin-left: 3rem;
 			@include lg {
 				margin-left: -3rem;
 				margin-top: 1rem;
+			}			
+			@include md {
+				margin-left: 10rem;
+				margin-top: 0rem;
 			}
 			.overlay{
 				position: absolute;
