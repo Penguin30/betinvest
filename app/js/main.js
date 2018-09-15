@@ -62,12 +62,12 @@ var scroll = function(){
 $(window).load(function(){
 	setTimeout(function(){
 		$('#preloader').addClass("d-none");
-		setTimeout(ballIn, 500);
-		setTimeout(flyCar, 500);
-		setTimeout(hexagonBlock, 500);
-		setTimeout(header, 500);
-		setTimeout(mainT, 500);
-		setTimeout(scroll, 500);
+		setTimeout(ballIn, 4000);
+		setTimeout(flyCar, 3000);
+		setTimeout(hexagonBlock, 3500);
+		setTimeout(header, 8000);
+		setTimeout(mainT, 9000);
+		setTimeout(scroll, 9000);
 	}, 500);
 });
 
