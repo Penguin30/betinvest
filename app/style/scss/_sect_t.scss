@@ -8,9 +8,9 @@
 	overflow: hidden;
 	@include xs{
 	.main_nav{
-		@include xs{
-			display: none;
-		}
+//		@include xs{
+//			display: none;
+//		}
 		@include sm{
 			top: 33%;
     		right: 3%;
@@ -37,6 +37,9 @@
 		.hex_2{
 			margin-top: 20%;
 			margin-left: 93px;
+			@include md {
+				margin-left: 245px;
+			}
 		}
 		.hex_1{
 			margin-top: 8%;
@@ -63,7 +66,7 @@
 		.hex_4{
 			transform: translate(71%, -48%);
 			@include xs{
-				transform: translate(60%, -48%);
+				transform: translate(45%, -170%);
 			}
 			@include sm{
 				transform: translate(34%, -158%);
@@ -80,8 +83,7 @@
 			font-size: 0.875em;
 			margin-top: -5px;
 			@include paddingLR(45px, 45px);
-			text-align: 
-			center;
+			text-align: center;
 			.hex_tittle{
 				@extend %USHText;
 				margin-bottom: 26px;
@@ -89,7 +91,7 @@
 			}
 			.hex_text{
 				@include xs{
-					display: none;
+					height: 100px;
 				}
 				@include sm{
 					height: 100px;
@@ -99,7 +101,7 @@
 		.info_btn{
 			transform: translate(46%, 10%);
 			@include xs{
-				transform: translate(22%, 10%);
+				transform: translate(44%, 11%);
 			}
 			@include md{
 				transform: translate(14%, -25%);
@@ -109,7 +111,7 @@
 			
 			transform: translate(106%, -4%);
 			@include xs{
-				transform: translate(15%, -8%);
+				transform: translate(122%, -103%);
 			}
 			@include sm{
 				transform: translate(112%, -110%);

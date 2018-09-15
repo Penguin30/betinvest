@@ -19,14 +19,19 @@
 				@extend %USHText;
 			}
 			@include xs{
-				margin-top: calc(50% - 50px);
-				margin-left: calc(58% - 50px);
+				margin-top: calc(50% - 140px);
+				margin-left: calc(58% - 130px);
+				margin-bottom: 6.2rem;
 			}
 			@include sm{
 				margin-left: calc(49% - 50px);
 			}
 			@include md{
 				margin-left: calc(53% - 50px);
+			}			
+			@include lg{
+				margin-left: 220px;
+				margin-top: 18%;
 			}
 		}
 		.hex_1{
@@ -38,6 +43,7 @@
 			margin-left: 35px;
 			@include xs{
 				margin-left: calc(17% - 50px);
+				margin-top: -3%;
 			}
 			@include sm{
 				margin-left: calc(11% - 50px);
@@ -47,24 +53,31 @@
 				margin-left: calc(10% - 50px);
     			margin-top: calc(2% - 50px);
 			}
+			@include lg{
+				margin-left: 0px;
+				margin-top: 3%;
+			}
 		}
 		.hex_4{
 			.hex_tittle{
 				@extend %USHText;
-				@include xs{
-					padding-left: 28px;
-				}
+//				@include xs{
+//					padding-left: 28px;
+//				}
 			}
 			
 			transform: translate(130%, -48%);
 			@include xs{
-				transform: translate(84%, -48%);
+				transform: translate(64%, -36%);
 			}
 			@include sm{
 				transform: translate(67%,-53%);
 			}
 			@include md{
 				transform: translate(83%,-51%);
+			}			
+			@include lg{
+				transform: translate(3%, -35%);
 			}
 		}
 		.t_hex_info{
@@ -78,15 +91,15 @@
 				font-size: 1.875em;
 			}
 		}
-		.hex_text{
-			@include xs{
-				display: none;
-			}
-		}
+//		.hex_text{
+//			@include xs{
+//				display: none;
+//			}
+//		}
 		.info_btn{
 			transform: translate(43%, 10%);
 			@include xs{
-				transform: translate(21%, 13%);
+				transform: translate(45%, -25%);
 			}
 			@include sm{
 				transform: translate(43%, -30%);

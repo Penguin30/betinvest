@@ -182,7 +182,7 @@ a{
     }    
 	@include sm{
     	bottom: 6%;
-    	right: -10%;
+    	right: 0%;
     }
 
 }
@@ -247,8 +247,8 @@ a{
       margin: 93.82px 0;
   }  
     @include xs{
-    	width: 258px; 
-  		height: 148.96px;
+    	width: 325px; 
+  		height: 195px;
   		margin: 74.48px 0;
     }
 }
@@ -271,14 +271,6 @@ a{
   @include xs{
       border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent;
-  }
-  @include xs{
-    border-left: 129px solid transparent;
-  	border-right: 129px solid transparent;
-  }
-  @include xs{
-    border-left: 129px solid transparent;
-  	border-right: 129px solid transparent;
   }
 }
 
@@ -314,13 +306,16 @@ a{
 	position: absolute;
     top: 46%;
     right: 8%;
+	@include lg {
+		right: 1vw;
+	}
     @include md{
     	top: 56%;
     	right: 3%;
     }
 	@include sm {
 		top: 45%;
-		right: -9%;
+		right: 0;
 	}	
 	@include xs {
 		top: 36%;
@@ -357,7 +352,10 @@ a{
 .hex_text{
 	height: 145px;
 	overflow-x: hidden;
-    overflow-y: scroll;
+	overflow-y: scroll;
+	@include xs{
+		height: 69px;
+	}
 }
 .hex_text::-webkit-scrollbar {width:0px;}
 .container {
@@ -370,7 +368,19 @@ a{
 	top: 0;
 	position: fixed;
 	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.preloader_gif{
+		width: 100%;
+		height: auto;
+		overflow:  hidden;
+	}
+	.preloader_gif::-webkit-scrollbar {width:0px;}
 }
 .margin_h{
 	margin-top: 255px;
+}
+section{
+	margin-top:-1px;
 }

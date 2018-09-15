@@ -11,10 +11,14 @@
 //	width: 100%;
 	.footer_cont{
 		position: relative;
-		margin-top: 100px;
+//		margin-top: 100px;
 		.f_menu{
 			text-transform: uppercase;
 			display: flex;
+			margin-left: 0;
+			@inlcude sm {
+				margin-left: -80px;
+			}
 			a{
 				text-decoration: none;
 			}
@@ -35,14 +39,23 @@
 				font-size: 1em;
 				color: $white;
 				@extend %USHText;
+				@include md {
+					font-size: .9em;
+				}
 			}
 		}
 	}
 	.social{
 		position: absolute;
-		top: 10%;
-    	right: 8%;
+		top: 12%;
+    	right: 6%;
 		display: flex;
+		@include sm {
+			right: -15%;
+		}		
+		@include md {
+			right: 4%;
+		}
 		h3{
 			font-size: 0.75em;
 			@extend %USHText;
@@ -64,15 +77,35 @@
 	.copir{
 		text-transform: capitalize;
 		position: absolute;
-		bottom: 10px;
+		bottom: 0px;
 		left: 10px;
+		@include sm {
+			left: -60px;
+		}
 	}
 	.join_us{
 		bottom: 10%;
     	right: 8%;
+		@include sm {
+			right: -10%;
+			bottom: 0;
+		}
 	}
 	
 	.fp-tableCell {
 		vertical-align: inherit;
 	}
+}
+
+.sect_five .main_nav {
+	top: 29%;
+	right: 7%;
+}
+
+.sect_four .main_nav {
+	top: 40%;
+}
+
+.sect_six .main_nav {
+	top: 40%;
 }
