@@ -154,7 +154,7 @@ html {
 			list-style: none;
 			opacity: 0;
 			@include md{
-				margin-top: -100px;
+				margin-top: 0px;
 			}
 			@include xs{
 				margin-top: 55px;
@@ -216,7 +216,7 @@ html {
 			}
 			@include lg{
 				margin-top: -6%;
-    			margin-left: 63%;
+    			margin-left: 65%;
     			font-size: 1.612em;
 			}			
 			@include md{
@@ -248,7 +248,7 @@ html {
 			background-color: #000000ab;
 				@include md{
 					position: relative;
-					top: 135px;
+					top: -50px;
 					left: -173px;
 					transform: translate(16%, 42%);
 					@include paddingLR(15px, 15px);
@@ -293,6 +293,7 @@ html {
     			}    			
 				@include xs{
 					margin-top: -39px;
+					height: 100px;
     			}
 				p {
 					@include sm {
@@ -303,6 +304,9 @@ html {
 			}
 			.info_about_text::-webkit-scrollbar {width:0px;}
 			.info_btn{
+				@include xs {
+					margin: 25px 35px;
+				}
 				@include md{
 					margin: -16px 79px;
 				}

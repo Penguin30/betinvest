@@ -306,6 +306,9 @@ a{
 	position: absolute;
     top: 46%;
     right: 8%;
+	@include lg {
+		right: 1vw;
+	}
     @include md{
     	top: 56%;
     	right: 3%;

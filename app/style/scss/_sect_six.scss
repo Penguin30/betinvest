@@ -65,12 +65,20 @@
 		.hex_1{
 			
 			position: absolute;
-			top: 27%;
-			left: 9%;
+			top: 42%;
+			left: 0%;
 			color: $white;
 			@include md {
 				top: 50%;
 				left: 26%;
+			}			
+			@include sm {
+				top: 54%;
+				left: 19%;
+			}			
+			@include xs {
+				top: 60%;
+				left: 21%;
 			}
 			.t_hex_info{
 				@extend %RobotoText;
@@ -96,6 +104,12 @@
 				backgroung: none;
 				@include md {
 					transform: translate(192%, 37%);	
+				}
+				@include sm {
+					transform: translate(159%, 0%);	
+				}
+				@include xs {
+					transform: translate(158%, -7%);	
 				}				
 			}
 		}
@@ -110,35 +124,86 @@
 	}
 	
 	.mp-marks-item.one {
-		top: 25%;
-		left: 43%;
+		top: 35%;
+		left: 44%;
+		@include sm {
+			top: 36%;
+			left: 37%;
+		}		
+		@include xs {
+			top: 36%;
+			left: 38%;
+		}
 	}
 	
 	.mp-marks-item.two {
-		top: 25%;
-		left: 52%;
+		top: 35%;
+		left: 50%;
+		@include sm {
+			top: 36%;
+			left: 52%;
+		}		
+		@include xs {
+			top: 36%;
+			left: 50%;
+		}
 	} 
 	.mp-marks-item.third {
-		top: 21%;
-		left: 54%;
+		top: 33%;
+		left: 53%;
+		@include sm {
+			top: 33%;
+			left: 57%;
+		}		
+		@include xs {
+			top: 33%;
+			left: 56%;
+		}
 	}
 	
 	.mp-marks-item.fourth {
-		top: 20%;
-		left: 57.5%;
+		top: 33%;
+		left: 56.5%;
+		@include sm {
+			left: 65.5%;
+		}		
+		@include xs {
+			left: 63%;
+		}
 	}
 	
 	.mp-marks-item.five {
-		top: 16.5%;
-		left: 37%;
+		top: 30%;
+		left: 39%;
+		@include md {
+			left: 34%;
+		}		
+		@include sm {
+			left: 28%;
+		}		
+		@include xs {
+			left: 29%;
+		}
 	}
 	
 	.mp-marks-item.six {
-		top: 100px;
-		left: 47px;
+		top: 26%;
+		left: 121px;
 		@include lg {
-			top: 114px;
+			top: 315px;
 			left: -39px;
+		}
+		@include md {
+			top: 21%;
+			left: 0;
+		}		
+		@include sm {
+			top: 24%;
+			left: -16px;
+		}		
+		@include xs {
+			top: 20%;
+			left: 50px;
 		}
 	}
 }
@@ -160,7 +225,7 @@
 			
 	}
 	@include md {
-		bottom: -9%;
+		bottom: 6%;
 		left: 53%;
 		transform: translateX(-50%);
 	}
@@ -168,7 +233,7 @@
 
 .sect_six .sect_six_cont .join_us {
 	@include md {
-		bottom: -10%;
+		bottom: 8%;
 	}
 }
 
