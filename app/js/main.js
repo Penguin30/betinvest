@@ -1,9 +1,9 @@
-$(document).ready(function() {        
-        $(".nav_item_hover").hover(function(){
-           $(this).stop(true).fadeTo("fast",1); // This sets the opacity to 100%     on hover
-        },function(){
-            $(this).stop(true).fadeTo("fast", 0); // This sets the opacity back to 60% on mouseout
-        });
+$(document).ready(function() {
+	$(".nav_item_hover").hover(function(){
+		$(this).stop(true).fadeTo("fast",1); // This sets the opacity to 100%     on hover
+	},function(){
+		$(this).stop(true).fadeTo("fast", 0); // This sets the opacity back to 60% on mouseout
+	});
 });
 
 var liLength = $('#ball_con > li > img');
@@ -60,36 +60,34 @@ var scroll = function(){
 };
 
 $(window).load(function(){
- setTimeout(function(){
- 	$('#preloader').addClass("d-none");
-		setTimeout(ballIn, 3000);
-		setTimeout(flyCar, 4000);
-	 	setTimeout(hexagonBlock, 5000);
-		setTimeout(header, 5500);
-		setTimeout(mainT, 9000);
-		setTimeout(scroll, 9000);
- }, 2000);
-	
+	setTimeout(function(){
+		$('#preloader').addClass("d-none");
+		setTimeout(ballIn, 500);
+		setTimeout(flyCar, 500);
+		setTimeout(hexagonBlock, 500);
+		setTimeout(header, 500);
+		setTimeout(mainT, 500);
+		setTimeout(scroll, 500);
+	}, 500);
 });
 
-
 $('#fullpage').fullpage({
-		navigation: false,
-	    navigationPosition: 'right',
-	    scrollBar: false,
-	    dragAndMove: 'fingersonly',
-	    normalScrollElements: '#main_sect,',
-	    onLeave: function(section, origin, destination, direction) {
-			var leavingSection = $(this);
-			var mainSect = $("#main_sect");
- 			if(section.item == mainSect[0]) {
-				$('#header').removeClass('d-block');
-				$("#header").addClass('d-none');
-			}
-			if(section.item == $("#sect_two")[0] && destination=='up') {
-				$('#header').removeClass('d-none');
-				$('#header').addClass('d-block');
-			}
- 		}
-	 });
+	sectionSelector: '.section',
+	navigation: true,
+	anchors: ['main_sectt', 'sect_twoo', 'sect_tt', 'sect-fourr', 'sect_fivee', 'sect_sixx', 'footerr'],
+	menu: '#menu',
+	onLeave: function(origin, destination, direction) {
+		var leavingSection = $(this);
+		var mainSect = $("#main_sect");
+		if(origin.item == mainSect[0]) {
+			$('#header').removeClass('d-block');
+			$("#header").addClass('d-none');
+		}
+		if(destination.anchor == 'main_sectt') {
+			$('#header').removeClass('d-none');
+			$('#header').addClass('d-block');
+		}
+	}
+});
 
+$('#fp-nav').hide();
