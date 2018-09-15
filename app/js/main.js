@@ -78,8 +78,7 @@ $('.join_us').click(function() {
 });
 
 $('.close-form').click(function() {
-	$('.section_form').slideDown('slow').animate({
-		top: 0,
+	$('.section_form').hide('slow').animate({
 		opacity: 0
 	}, 500);
 });
