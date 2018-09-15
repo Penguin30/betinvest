@@ -215,6 +215,10 @@ a{
 		background-size: 95px 100px;
 		margin: -10px 35px
 	}
+	@include xs {
+		background-size: 95px 100px;
+		margin: -10px 35px
+	}
 }
 .learn_m{
 	@extend %USHText;
@@ -242,11 +246,6 @@ a{
       height: 187.64px;
       margin: 93.82px 0;
   }  
-	@include xs{
-   	  width: 325px; 
-      height: 187.64px;
-      margin: 93.82px 0;
-  }
     @include xs{
     	width: 258px; 
   		height: 148.96px;
@@ -272,6 +271,10 @@ a{
   @include xs{
       border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent;
+  }
+  @include xs{
+    border-left: 129px solid transparent;
+  	border-right: 129px solid transparent;
   }
   @include xs{
     border-left: 129px solid transparent;

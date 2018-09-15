@@ -116,11 +116,17 @@ a {
     .info_btn {
       -webkit-background-size: 95px 100px;
               background-size: 95px 100px;
-<<<<<<< HEAD
       margin: 15px 34px; } }
-=======
+  @media (min-width: 320px) and (max-width: 575px) {
+    .info_btn {
+      -webkit-background-size: 95px 100px;
+              background-size: 95px 100px;
       margin: -10px 35px; } }
->>>>>>> 19f867caae5fe9be3b3352f761f8babef46dc844
+  @media (min-width: 320px) and (max-width: 575px) {
+    .info_btn {
+      -webkit-background-size: 95px 100px;
+              background-size: 95px 100px;
+      margin: -10px 35px; } }
 
 .learn_m {
   font-size: 0.875em; }
@@ -146,15 +152,9 @@ a {
       margin: 93.82px 0; } }
   @media (min-width: 320px) and (max-width: 575px) {
     .hexagon {
-<<<<<<< HEAD
-      width: 325px;
-      height: 187.64px;
-      margin: 93.82px 0; } }
-=======
       width: 258px;
       height: 148.96px;
       margin: 74.48px 0; } }
->>>>>>> 19f867caae5fe9be3b3352f761f8babef46dc844
 
 .hexagon:before,
 .hexagon:after {
@@ -177,13 +177,18 @@ a {
   @media (min-width: 320px) and (max-width: 575px) {
     .hexagon:before,
     .hexagon:after {
-<<<<<<< HEAD
       border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent; } }
-=======
+  @media (min-width: 320px) and (max-width: 575px) {
+    .hexagon:before,
+    .hexagon:after {
       border-left: 129px solid transparent;
       border-right: 129px solid transparent; } }
->>>>>>> 19f867caae5fe9be3b3352f761f8babef46dc844
+  @media (min-width: 320px) and (max-width: 575px) {
+    .hexagon:before,
+    .hexagon:after {
+      border-left: 129px solid transparent;
+      border-right: 129px solid transparent; } }
 
 .hexagon:before {
   bottom: 100%;
@@ -408,8 +413,8 @@ html {
               -ms-transform: translate(7%, 7%);
                   transform: translate(7%, 7%); } }
     .header .nav .nav_item {
-      display: none;
       z-index: 1;
+      display: inline-block;
       position: relative;
       color: #ffffff;
       font-size: 1.125em;
@@ -1176,6 +1181,11 @@ html {
   .sect_t .main_nav {
     top: 33%;
     right: 3%; } }
+
+@media (min-width: 320px) and (max-width: 575px) and (min-width: 992px) and (max-width: 1199px) {
+  .sect_t .main_nav {
+    top: 33%;
+    right: -2%; } }
   .sect_t .sect_t_cont {
     position: relative; }
     .sect_t .sect_t_cont .hexagon:before, .sect_t .sect_t_cont .hexagon:after {
