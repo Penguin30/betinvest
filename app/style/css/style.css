@@ -82,7 +82,7 @@ a {
   @media (min-width: 576px) and (max-width: 767px) {
     .join_us {
       bottom: 6%;
-      right: -10%; } }
+      right: 0%; } }
 
 .info_btn {
   width: 146px;
@@ -152,8 +152,8 @@ a {
       margin: 93.82px 0; } }
   @media (min-width: 320px) and (max-width: 575px) {
     .hexagon {
-      width: 258px;
-      height: 148.96px;
+      width: 325px;
+      height: 195px;
       margin: 74.48px 0; } }
 
 .hexagon:before,
@@ -179,16 +179,6 @@ a {
     .hexagon:after {
       border-left: 162.5px solid transparent;
       border-right: 162.5px solid transparent; } }
-  @media (min-width: 320px) and (max-width: 575px) {
-    .hexagon:before,
-    .hexagon:after {
-      border-left: 129px solid transparent;
-      border-right: 129px solid transparent; } }
-  @media (min-width: 320px) and (max-width: 575px) {
-    .hexagon:before,
-    .hexagon:after {
-      border-left: 129px solid transparent;
-      border-right: 129px solid transparent; } }
 
 .hexagon:before {
   bottom: 100%;
@@ -228,7 +218,7 @@ a {
   @media (min-width: 576px) and (max-width: 767px) {
     .main_nav {
       top: 45%;
-      right: -9%; } }
+      right: 0; } }
   @media (min-width: 320px) and (max-width: 575px) {
     .main_nav {
       top: 36%;
@@ -582,7 +572,7 @@ html {
       @media (min-width: 576px) and (max-width: 767px) {
         .main_sect .main_sect_container .main_tittle {
           margin-top: -95px;
-          margin-left: 250px;
+          margin-left: 208px;
           font-size: 2em;
           white-space: nowrap; } }
       @media (min-width: 320px) and (max-width: 575px) {
@@ -618,7 +608,7 @@ html {
       @media (min-width: 576px) and (max-width: 767px) {
         .main_sect .main_sect_container .info_about {
           margin-left: -34px;
-          margin-top: 200px; } }
+          margin-top: 370px; } }
       @media (min-width: 320px) and (max-width: 575px) {
         .main_sect .main_sect_container .info_about {
           margin-left: 108px;
@@ -891,7 +881,7 @@ html {
               animation: none;
       -webkit-background-size: 333% 333%;
               background-size: 333%;
-      background-position: -845px -232px; } }
+      background-position: -845px -300px; } }
   @media (min-width: 320px) and (max-width: 575px) {
     #balkon {
       -webkit-animation: none;
