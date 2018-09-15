@@ -15,6 +15,10 @@
 		.f_menu{
 			text-transform: uppercase;
 			display: flex;
+			margin-left: 0;
+			@inlcude sm {
+				margin-left: -80px;
+			}
 			a{
 				text-decoration: none;
 			}
@@ -46,6 +50,12 @@
 		top: 12%;
     	right: 8%;
 		display: flex;
+		@include sm {
+			right: -15%;
+		}		
+		@include md {
+			right: 4%;
+		}
 		h3{
 			font-size: 0.75em;
 			@extend %USHText;
@@ -67,12 +77,19 @@
 	.copir{
 		text-transform: capitalize;
 		position: absolute;
-		bottom: 10px;
+		bottom: 0px;
 		left: 10px;
+		@include sm {
+			left: -60px;
+		}
 	}
 	.join_us{
 		bottom: 10%;
     	right: 8%;
+		@include sm {
+			right: -10%;
+			bottom: 0;
+		}
 	}
 	
 	.fp-tableCell {

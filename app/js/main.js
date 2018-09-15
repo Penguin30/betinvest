@@ -87,6 +87,7 @@ $('.close-form').click(function() {
 $('#fullpage').fullpage({
 	sectionSelector: '.section',
 	navigation: true,
+	scrollingSpeed: 1000,
 	anchors: ['main_sectt', 'sect_twoo', 'sect_tt', 'sect-fourr', 'sect_fivee', 'sect_sixx', 'footerr'],
 	menu: '#menu',
 	onLeave: function(origin, destination, direction) {

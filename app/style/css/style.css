@@ -1867,7 +1867,12 @@ html {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-left: 0; }
+
+@inlcude sm {
+  .footer .footer_cont .f_menu {
+    margin-left: -80px; } }
       .footer .footer_cont .f_menu a {
         text-decoration: none; }
       .footer .footer_cont .f_menu .f_menu_item {
@@ -1899,6 +1904,12 @@ html {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .footer .social {
+        right: -15%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .footer .social {
+        right: 4%; } }
     .footer .social h3 {
       font-size: 0.75em;
       margin-left: 14px; }
@@ -1912,10 +1923,17 @@ html {
   .footer .copir {
     text-transform: capitalize;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 10px; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .footer .copir {
+        left: -60px; } }
   .footer .join_us {
     bottom: 10%;
     right: 8%; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .footer .join_us {
+        right: -10%;
+        bottom: 0; } }
   .footer .fp-tableCell {
     vertical-align: inherit; }
