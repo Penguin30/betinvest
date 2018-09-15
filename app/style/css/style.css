@@ -1900,7 +1900,7 @@ html {
   .footer .social {
     position: absolute;
     top: 12%;
-    right: 8%;
+    right: 6%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1938,3 +1938,13 @@ html {
         bottom: 0; } }
   .footer .fp-tableCell {
     vertical-align: inherit; }
+
+.sect_five .main_nav {
+  top: 29%;
+  right: 7%; }
+
+.sect_four .main_nav {
+  top: 40%; }
+
+.sect_six .main_nav {
+  top: 40%; }

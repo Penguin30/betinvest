@@ -48,7 +48,7 @@
 	.social{
 		position: absolute;
 		top: 12%;
-    	right: 8%;
+    	right: 6%;
 		display: flex;
 		@include sm {
 			right: -15%;
@@ -95,4 +95,17 @@
 	.fp-tableCell {
 		vertical-align: inherit;
 	}
+}
+
+.sect_five .main_nav {
+	top: 29%;
+	right: 7%;
+}
+
+.sect_four .main_nav {
+	top: 40%;
+}
+
+.sect_six .main_nav {
+	top: 40%;
 }
