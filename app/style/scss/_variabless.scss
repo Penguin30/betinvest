@@ -352,7 +352,10 @@ a{
 .hex_text{
 	height: 145px;
 	overflow-x: hidden;
-    overflow-y: scroll;
+	overflow-y: scroll;
+	@include xs{
+		height: 69px;
+	}
 }
 .hex_text::-webkit-scrollbar {width:0px;}
 .container {
