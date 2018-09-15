@@ -24,6 +24,9 @@ html {
 		@include md{
 			transform: translate(-26%, 15%);
 		}
+		@include sm {
+			margin-left: 0;
+		}
 	}
 	
 	.nav{
@@ -154,7 +157,10 @@ html {
 			list-style: none;
 			opacity: 0;
 			@include md{
-				margin-top: 0px;
+				margin-top: -65px;//0
+			}
+			@include sm{
+				margin-top: 200px;
 			}
 			@include xs{
 				margin-top: 55px;

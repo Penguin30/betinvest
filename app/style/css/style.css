@@ -379,6 +379,9 @@ html {
         -webkit-transform: translate(-26%, 15%);
             -ms-transform: translate(-26%, 15%);
                 transform: translate(-26%, 15%); } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      .header .logo_container {
+        margin-left: 0; } }
   .header .nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -508,7 +511,10 @@ html {
       opacity: 0; }
       @media (min-width: 768px) and (max-width: 991px) {
         .main_sect .main_sect_container .ball_con {
-          margin-top: 0px; } }
+          margin-top: -65px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        .main_sect .main_sect_container .ball_con {
+          margin-top: 200px; } }
       @media (min-width: 320px) and (max-width: 575px) {
         .main_sect .main_sect_container .ball_con {
           margin-top: 55px; } }
@@ -1191,6 +1197,9 @@ html {
     .sect_t .sect_t_cont .hex_2 {
       margin-top: 20%;
       margin-left: 93px; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .sect_t .sect_t_cont .hex_2 {
+          margin-left: 245px; } }
     .sect_t .sect_t_cont .hex_1 {
       margin-top: 8%;
       margin-left: 35px; }
@@ -1593,15 +1602,15 @@ html {
       color: #ffffff; }
       @media (min-width: 768px) and (max-width: 991px) {
         .sect_six .sect_six_cont .hex_1 {
-          top: 50%;
+          top: 43%;
           left: 26%; } }
       @media (min-width: 576px) and (max-width: 767px) {
         .sect_six .sect_six_cont .hex_1 {
-          top: 54%;
+          top: 47%;
           left: 19%; } }
       @media (min-width: 320px) and (max-width: 575px) {
         .sect_six .sect_six_cont .hex_1 {
-          top: 60%;
+          top: 50%;
           left: 21%; } }
       .sect_six .sect_six_cont .hex_1 .t_hex_info {
         color: #ffffff;
@@ -1747,8 +1756,7 @@ html {
   text-transform: uppercase;
   height: 100vh; }
   .footer .footer_cont {
-    position: relative;
-    margin-top: 100px; }
+    position: relative; }
     .footer .footer_cont .f_menu {
       text-transform: uppercase;
       display: -webkit-box;
@@ -1775,9 +1783,12 @@ html {
       .footer .footer_cont .f_menu h3 {
         font-size: 1em;
         color: #ffffff; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .footer .footer_cont .f_menu h3 {
+            font-size: .9em; } }
   .footer .social {
     position: absolute;
-    top: 10%;
+    top: 12%;
     right: 8%;
     display: -webkit-box;
     display: -webkit-flex;

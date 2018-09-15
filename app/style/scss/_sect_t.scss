@@ -37,6 +37,9 @@
 		.hex_2{
 			margin-top: 20%;
 			margin-left: 93px;
+			@include md {
+				margin-left: 245px;
+			}
 		}
 		.hex_1{
 			margin-top: 8%;
@@ -80,8 +83,7 @@
 			font-size: 0.875em;
 			margin-top: -5px;
 			@include paddingLR(45px, 45px);
-			text-align: 
-			center;
+			text-align: center;
 			.hex_tittle{
 				@extend %USHText;
 				margin-bottom: 26px;
