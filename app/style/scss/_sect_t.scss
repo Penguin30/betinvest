@@ -6,8 +6,29 @@
 	background-size: cover;
 	position: center center;
 	overflow: hidden;
+	@include xs{
+	.main_nav{
+		@include xs{
+			display: none;
+		}
+		@include sm{
+			top: 33%;
+    		right: 3%;
+    	}
+
+		@include md{
+			top: 33%;
+    		right: 3%;
+		}
+		@include lg{
+			top: 33%;
+    		right: -2%;
+		}
+		}
+	}
 	.sect_t_cont{
 		position: relative;
+
 		.hexagon{
 			&:before, &:after{
 				margin-left: 0%;
@@ -20,28 +41,115 @@
 		.hex_1{
 			margin-top: 8%;
 			margin-left: 35px;
+			@include xs{
+				margin-top: calc(17% - 50px);
+    			margin-left: calc(10% - 50px);
+
+			}
+			@include sm{
+				margin-top: calc(16% - 50px);
+    			margin-left: calc(5% - 50px);
+			}
+			@include md{
+				margin-left: calc(4% - 50px);
+				margin-top: calc(-2% - 50px);
+    			
+			}
+			@include lg{
+				margin-top: calc(-6% - 50px);
+				margin-left: calc(7% - 50px);
+			}
 		}
 		.hex_4{
 			transform: translate(71%, -48%);
+			@include xs{
+				transform: translate(60%, -48%);
+			}
+			@include sm{
+				transform: translate(34%, -158%);
+			}
+			@include md{
+				transform: translate(86%, -104%);
+			}
+			@include lg{
+				transform: translate(107%, -98%);
+			}
+			
 		}
 		.t_hex_info{
 			font-size: 0.875em;
 			margin-top: -5px;
 			@include paddingLR(45px, 45px);
-			text-align: center;
+			text-align: 
+			center;
 			.hex_tittle{
 				@extend %USHText;
 				margin-bottom: 26px;
 				font-size: 1.875em;
 			}
+			.hex_text{
+				@include xs{
+					display: none;
+				}
+				@include sm{
+					height: 100px;
+				}
+			}
 		}
 		.info_btn{
 			transform: translate(46%, 10%);
+			@include xs{
+				transform: translate(22%, 10%);
+			}
+			@include md{
+				transform: translate(14%, -25%);
+			}
 		}
 		.watch_video{
+			
 			transform: translate(106%, -4%);
+			@include xs{
+				transform: translate(15%, -8%);
+			}
+			@include sm{
+				transform: translate(112%, -110%);
+			}
+			@include md{
+				transform: translate(-123%, 90%);
+			}
+			@include lg{
+				transform: translate(-135%, 94%);
+			}
 			.video_btn{
 				transform: translate(24%,-148%);
+				@include md{
+    				transform: translate(7%, -163%);
+				}
+			}
+		}
+		.hex{
+
+			@include xs{
+				&:first-of-type{
+				 	margin-left: calc(33% - 50px);
+				}
+				
+			}
+
+			@include sm{
+				&:first-of-type{
+				 	margin-left: calc(30% - 50px);
+				}
+			}
+			@include md{
+				&:first-of-type{
+				 	margin-left: calc(53% - 50px);
+				}
+			}
+			@include lg{
+				&:first-of-type{
+				 	margin-left: calc(53% - 50px);
+				}
 			}
 		}
 

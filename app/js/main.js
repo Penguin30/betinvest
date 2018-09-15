@@ -71,6 +71,19 @@ $(window).load(function(){
 	}, 500);
 });
 
+$('.join_us').click(function() {
+	$('.section_form').show('slow').animate({
+		opacity: .8
+	}, 1000);
+});
+
+$('.close-form').click(function() {
+	$('.section_form').slideDown('slow').animate({
+		top: 0,
+		opacity: 0
+	}, 500);
+});
+
 $('#fullpage').fullpage({
 	sectionSelector: '.section',
 	navigation: true,

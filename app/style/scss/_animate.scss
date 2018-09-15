@@ -72,13 +72,17 @@
 	@include lg{
 		animation: none;
 		background-position-x: 39%;
-	}
+		background-size: 140%;
+	}	
 	@include sm{
-		animation: none;	
+		animation: none;
+		background-size: 333%;
+		background-position: -845px -300px;
 	}
 	@include xs{
 		animation: none;
-		background-position-x: 58%;
+		background-position: 58% -280px;
+		background-size: 380%;
 	}
 }
 
@@ -109,6 +113,9 @@
 	@include sm{
 		transform: translate(-89%, 95%) scale(0.6);
 	}
+	@include xs{
+		transform: translate(-65%, 95%) scale(0.5);
+	}
 }
 .ball_2{
 	animation: Ball 2.9s linear forwards infinite;
@@ -118,6 +125,9 @@
 	}	
 	@include sm{
 		transform: translate(-93%, 82%) scale(0.6);
+	}	
+	@include xs{
+		transform: translate(-100%, 82%) scale(0.5);
 	}
 }
 .ball_3{
@@ -127,7 +137,10 @@
 		transform: translate(-161%, 238%) scale(0.6);
 	}	
 	@include sm{
-		transform: translate(-161%, 72%) scale(0.6);
+		transform: translate(-161%, 72%) scale(0.5);
+	}	
+	@include xs{
+		transform: translate(-185%, 72%) scale(0.5);
 	}
 }
 .ball_4{
@@ -138,6 +151,9 @@
 	}
 	@include sm{
 		transform: translate(-361%, 69%) scale(0.6);
+	}	
+	@include xs{
+		transform: translate(-441%, 69%) scale(0.5);
 	}
 }
 .ball_5{
@@ -148,6 +164,9 @@
 	}	
 	@include sm{
 		transform: translate(-813%, -31%) scale(0.8);
+	}	
+	@include xs{
+		transform: translate(-1100%, -31%) scale(0.6);
 	}
 }
 #earth_1_img{
