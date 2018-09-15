@@ -11,6 +11,11 @@
 		@include xs{
 			display: none;
 		}
+		@include sm{
+			top: 33%;
+    		right: 3%;
+    	}
+
 		@include md{
 			top: 33%;
     		right: 3%;
@@ -19,7 +24,7 @@
 			top: 33%;
     		right: -2%;
 		}
-	}
+		}
 	}
 	.sect_t_cont{
 		position: relative;
