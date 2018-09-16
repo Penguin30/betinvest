@@ -28,7 +28,12 @@
 	}
 	.sect_t_cont{
 		position: relative;
-
+		@include lg{
+			max-width: 100vw;
+		}
+		@include md{
+			max-width: 100vw;
+		}
 		.hexagon{
 			&:before, &:after{
 				margin-left: 0%;
@@ -38,7 +43,6 @@
 			margin-top: 20%;
 			margin-left: 93px;
 			@include md {
-				margin-left: 245px;
 			}
 		}
 		.hex_1{
@@ -54,13 +58,8 @@
     			margin-left: calc(5% - 50px);
 			}
 			@include md{
-				margin-left: calc(4% - 50px);
-				margin-top: calc(-2% - 50px);
-    			
 			}
 			@include lg{
-				margin-top: calc(-6% - 50px);
-				margin-left: calc(7% - 50px);
 			}
 		}
 		.hex_4{
@@ -72,10 +71,9 @@
 				transform: translate(34%, -158%);
 			}
 			@include md{
-				transform: translate(86%, -104%);
 			}
 			@include lg{
-				transform: translate(107%, -98%);
+				transform: translate(64%, -50%);
 			}
 			
 		}
@@ -117,10 +115,10 @@
 				transform: translate(112%, -110%);
 			}
 			@include md{
-				transform: translate(-123%, 90%);
+				transform: translate(97%, -4%);
 			}
 			@include lg{
-				transform: translate(-135%, 94%);
+				transform: translate(95%, -4%);
 			}
 			.video_btn{
 				transform: translate(24%,-148%);

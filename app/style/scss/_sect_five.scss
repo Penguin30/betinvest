@@ -31,11 +31,17 @@
 				color: $orange;
 				font-size: 1.5em;
 			}
+			.hex-text{
+				@include md{
+					height: 7vh;
+				}
+			}
 			margin-top: 8%;
 			margin-left: 35px;
 			margin-right: 60px;
 			@include md {
 				margin-left: 220px;
+				height: 19vh;
 			}
 			@include sm {
 				margin-left: 156px;
@@ -60,7 +66,7 @@
 		.info_btn{
 			transform: translate(45%, 10%);
 			@include md {
-				margin: -20px 57px !important;
+				margin: -8vh 57px !important;
 			}
 			@include sm {
 				margin: -40px 34px !important;
@@ -76,7 +82,7 @@
 				margin-top: 1rem;
 			}			
 			@include md {
-				margin-left: 10rem;
+				margin-left: 13.2rem;
 				margin-top: 0rem;
 			}
 			.overlay{
@@ -116,6 +122,11 @@
 				
 			.hex_tb_5{
 				margin: -59% 10% 24%;
+			}
+			img{
+				height: 16vh;
+				@include md{
+				}
 			}
 		}
 	}
