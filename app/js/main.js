@@ -43,7 +43,7 @@ var hexagonBlock = function() {
 }
 
 var flyCar = function(){
-	$("#fly_car_img").removeClass("d-none").addClass("d-block animated slideInLeft slower");
+	$("#fly_car_img").removeClass("d-none").addClass("d-block animated slideInLeft fly-car-animation-duration");
 };
 
 var logoHeader = $('.header .logo_container');
@@ -62,19 +62,19 @@ var scroll = function(){
 	$("#join").removeClass("d-none");
 	$("#scroll_down_2").removeClass("d-none");
 	$("#join_2").removeClass("d-none");
-	$("#main_nav").removeClass("d-none").addClass("animated bounceInRight");
-	$("#main_nav_2").removeClass("d-none").addClass("animated bounceInRight");
+	$("#main_nav").removeClass("d-none").addClass("animated slideInRight");
+	$("#main_nav_2").removeClass("d-none").addClass("animated slideInRight");
 };
 
 $(window).load(function(){
 	setTimeout(function(){
 		$('#preloader').addClass("d-none");
-		setTimeout(ballIn, 4000);
 		setTimeout(flyCar, 2800);
-		setTimeout(hexagonBlock, 3500);
-		setTimeout(header, 9000);
-		setTimeout(mainT, 10000);
-		setTimeout(scroll, 9000);
+		setTimeout(ballIn, 3000);
+		setTimeout(header, 7500);
+		setTimeout(mainT, 9250);
+		setTimeout(hexagonBlock, 9250);
+		setTimeout(scroll, 9250);
 	}, 500);
 });
 
@@ -93,7 +93,7 @@ $('.close-form').click(function() {
 $('#fullpage').fullpage({
 	sectionSelector: '.section',
 	navigation: true,
-	scrollingSpeed: 1000,
+	scrollingSpeed: 1100,
 	anchors: ['main_sectt', 'sect_twoo', 'sect_tt', 'sect-fourr', 'sect_fivee', 'sect_sixx', 'footerr'],
 	menu: '#menu',
 	onLeave: function(origin, destination, direction) {

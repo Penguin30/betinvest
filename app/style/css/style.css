@@ -846,27 +846,21 @@ html {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
-@-webkit-keyframes Ball {
-  0 {
-    -webkit-transform: translate(0px, 30px);
-            transform: translate(0px, 30px); }
-  50% {
-    -webkit-transform: translate(0px, -39px);
-            transform: translate(0px, -39px); }
-  100% {
-    -webkit-transform: translate(0px, 3px);
-            transform: translate(0px, 3px); } }
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); } }
 
-@keyframes Ball {
-  0 {
-    -webkit-transform: translate(0px, 30px);
-            transform: translate(0px, 30px); }
-  50% {
-    -webkit-transform: translate(0px, -39px);
-            transform: translate(0px, -39px); }
-  100% {
-    -webkit-transform: translate(0px, 3px);
-            transform: translate(0px, 3px); } }
+@keyframes bounce {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+  to {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); } }
 
 @-webkit-keyframes MouseOn {
   0 {
@@ -961,9 +955,19 @@ html {
           -ms-transform: translate(-41%, 99%) scale(0.8);
               transform: translate(-41%, 99%) scale(0.8); } }
 
+.fly-car-animation-duration {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s; }
+
 .ball_1 {
-  -webkit-animation: Ball 2s linear forwards infinite;
-          animation: Ball 2s linear forwards infinite; }
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+          animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
   @media (min-width: 768px) and (max-width: 991px) {
     .ball_1 {
       -webkit-transform: translate(-89%, 213%) scale(0.6);
@@ -981,10 +985,16 @@ html {
               transform: translate(-65%, 95%) scale(0.5); } }
 
 .ball_2 {
-  -webkit-animation: Ball 2.9s linear forwards infinite;
-          animation: Ball 2.9s linear forwards infinite;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+          animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
   @media (min-width: 768px) and (max-width: 991px) {
     .ball_2 {
       -webkit-transform: translate(-93%, 217%) scale(0.6);
@@ -1002,10 +1012,16 @@ html {
               transform: translate(-100%, 82%) scale(0.5); } }
 
 .ball_3 {
-  -webkit-animation: Ball 2.1s linear forwards infinite;
-          animation: Ball 2.1s linear forwards infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+          animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
   @media (min-width: 768px) and (max-width: 991px) {
     .ball_3 {
       -webkit-transform: translate(-161%, 238%) scale(0.6);
@@ -1023,10 +1039,16 @@ html {
               transform: translate(-185%, 72%) scale(0.5); } }
 
 .ball_4 {
-  -webkit-animation: Ball 2.9s linear forwards infinite;
-          animation: Ball 2.9s linear forwards infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+          animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; }
   @media (min-width: 768px) and (max-width: 991px) {
     .ball_4 {
       -webkit-transform: translate(-361%, 395%) scale(0.6);
@@ -1044,10 +1066,16 @@ html {
               transform: translate(-441%, 69%) scale(0.5); } }
 
 .ball_5 {
-  -webkit-animation: Ball 2.9s linear forwards infinite;
-          animation: Ball 2.9s linear forwards infinite;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s; }
+  -webkit-animation: bounce infifn;
+          animation: bounce infifn;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+          animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s; }
   @media (min-width: 768px) and (max-width: 991px) {
     .ball_5 {
       -webkit-transform: translate(-813%, 823%) scale(0.8);
