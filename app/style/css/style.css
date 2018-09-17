@@ -182,7 +182,7 @@ a {
 
 .hexagon:before {
   bottom: 100%;
-  border-bottom: 115.47px solid #000000ab; }
+  border-bottom: 120.47px solid #000000ab; }
   @media (min-width: 768px) and (max-width: 991px) {
     .hexagon:before {
       border-bottom: 93.82px solid #000000ab; } }
@@ -196,7 +196,7 @@ a {
 .hexagon:after {
   top: 100%;
   margin-left: -50%;
-  border-top: 115.47px solid #000000ab; }
+  border-top: 120.47px solid #000000ab; }
   @media (min-width: 768px) and (max-width: 991px) {
     .hexagon:after {
       border-top: 93.82px solid #000000ab; } }
@@ -659,7 +659,7 @@ html {
       .main_sect .main_sect_container .info_about .info_about_text {
         font-family: "Roboto", Arial, sans-serif;
         font-weight: 400;
-        height: 181px;
+        height: 180px;
         overflow-x: hidden;
         overflow-y: scroll; }
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -793,6 +793,9 @@ html {
     height: 2px;
     width: 10px; }
 
+.navbar-expand-lg .navbar-collapse {
+  display: none; }
+
 @-webkit-keyframes animatedBackground {
   0% {
     -webkit-transform: translate(-230px, 0px);
@@ -811,34 +814,34 @@ html {
 
 @-webkit-keyframes balkon {
   0% {
+    -webkit-transform: scale(1.16);
+            transform: scale(1.16); }
+  25% {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12); }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08); }
+  75% {
     -webkit-transform: scale(1.04);
             transform: scale(1.04); }
-  25% {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03); }
-  50% {
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02); }
-  75% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01); }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
 @keyframes balkon {
   0% {
+    -webkit-transform: scale(1.16);
+            transform: scale(1.16); }
+  25% {
+    -webkit-transform: scale(1.12);
+            transform: scale(1.12); }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08); }
+  75% {
     -webkit-transform: scale(1.04);
             transform: scale(1.04); }
-  25% {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03); }
-  50% {
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02); }
-  75% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01); }
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
@@ -851,8 +854,8 @@ html {
     -webkit-transform: translate(0px, -39px);
             transform: translate(0px, -39px); }
   100% {
-    -webkit-transform: translate(0px, 9px);
-            transform: translate(0px, 9px); } }
+    -webkit-transform: translate(0px, 3px);
+            transform: translate(0px, 3px); } }
 
 @keyframes Ball {
   0 {
@@ -862,8 +865,8 @@ html {
     -webkit-transform: translate(0px, -39px);
             transform: translate(0px, -39px); }
   100% {
-    -webkit-transform: translate(0px, 9px);
-            transform: translate(0px, 9px); } }
+    -webkit-transform: translate(0px, 3px);
+            transform: translate(0px, 3px); } }
 
 @-webkit-keyframes MouseOn {
   0 {

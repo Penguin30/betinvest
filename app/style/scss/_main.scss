@@ -11,7 +11,6 @@ html {
 	position: fixed;
     z-index: 100;
     width: 100%;
-
 	.header_cont{
 		overflow: hidden;
 		@include md{
@@ -291,7 +290,7 @@ html {
 				@extend %RobotoText;
 				font-family: "Roboto", Arial, sans-serif;
 				font-weight: 400;
-				height: 181px;
+				height: 180px;
 				overflow-x: hidden;
     			overflow-y: scroll;
     			@include lg{
@@ -447,3 +446,6 @@ html {
 	}
 }
 
+.navbar-expand-lg .navbar-collapse {
+	display: none;
+}

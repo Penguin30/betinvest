@@ -35,7 +35,7 @@ var ballIn = function(){
 };
 
 var mainT = function(){
-	$("#main_tittle").removeClass("d-none").show('slow');
+	$("#main_tittle").removeClass("d-none").addClass('d-block animated slideInRight ');
 };
 
 var hexagonBlock = function() {
@@ -50,10 +50,10 @@ var logoHeader = $('.header .logo_container');
 var menuList = $('.navbar-expand-lg .navbar-collapse');
 var header = function(){
 	$("#header").removeClass("d-none").addClass("d-block animated fadeInDown");
-	logoHeader.addClass('d-block animated fadeInDown');
 	setTimeout(function() {
-		menuList.addClass('d-block');
-	}, 1000);
+		logoHeader.removeClass('d-none').addClass('d-block animated fadeInDown');
+		menuList.addClass('d-block animated fadeInRight');
+	}, 400);
 };
 
 
@@ -70,10 +70,10 @@ $(window).load(function(){
 	setTimeout(function(){
 		$('#preloader').addClass("d-none");
 		setTimeout(ballIn, 4000);
-		setTimeout(flyCar, 3000);
+		setTimeout(flyCar, 2800);
 		setTimeout(hexagonBlock, 3500);
-		setTimeout(header, 8000);
-		setTimeout(mainT, 9000);
+		setTimeout(header, 9000);
+		setTimeout(mainT, 10000);
 		setTimeout(scroll, 9000);
 	}, 500);
 });
