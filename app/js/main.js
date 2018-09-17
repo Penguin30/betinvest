@@ -15,9 +15,8 @@ var nav_item = $(".main_nav_item_icon");
 
 var liLength = $('#ball_con > li > img');
 var ballIn = function(){
-	$('#ball_con').fadeTo('slow', 1).addClass("animated slideInRight");
 	setTimeout(function() {
-		liLength.eq(0).fadeTo('slow', 1);
+		liLength.eq(0).fadeTo('slow', 1).addClass('animated fadeInRight');
 	}, 1000);
 	setTimeout(function() {
 		liLength.eq(1).fadeTo('slow', 1);

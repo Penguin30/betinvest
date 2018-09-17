@@ -149,12 +149,12 @@ html {
 		@extend %USHText;
 		color: $white;
 		.ball_con{
+			position: relative;
 			margin-top: 200px;
 			background: transparent;
 			display: flex;
     		align-items: flex-end;
 			list-style: none;
-			opacity: 0;
 			@include md{
 				margin-top: -65px;//0
 			}
@@ -166,6 +166,7 @@ html {
 			}
 			.ball{
 				margin-left: 12px;
+				transition: transfrom .5s ease;
 				@include md{
 					animation: none;
 					opacity: 0.6;

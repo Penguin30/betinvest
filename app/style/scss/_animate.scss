@@ -3,7 +3,7 @@
 
 @keyframes animatedBackground {
     0% {
-        transform: translate(-230px, 0px)
+        transform: translate(-140px, 0px)
     }
     100% {
         transform: translate( 0px, -160px)
@@ -38,6 +38,34 @@
         transform: translate(0px, 3px)
     }
 }
+
+@keyframes ballFirst {
+	0% {
+		transform: translate(200%, 76%);
+		opacity: 0.2;
+	}
+	
+	25% {
+		transform: translate(150%, 52%);
+		opacity: 0.4;
+	}
+	
+	50% {
+		transform: translate(100%, 45%);
+		opacity: 0.6;
+	}
+	
+	75% {
+		transform: translate(50%, 38%);
+		opacity: 0.8;
+	}
+	
+	100% {
+		transform: translate(0%, 0%);
+		opacity: 1;
+	}
+}
+
 @keyframes MouseOn{
 	0{
 		transform: translate(0px, 0px)
@@ -102,6 +130,15 @@
 	}
 
 
+}
+
+.main_sect .main_sect_container .ball_con li:first-child {
+	opacity: 0;
+	animation: ballFirst 1.5s linear 6s forwards;
+}
+.main_sect .main_sect_container .ball_con li:nth-child(2) {
+	opacity: 0;
+	animation: ballFirst 1.5s linear 8s forwards;
 }
 
 .ball_1{

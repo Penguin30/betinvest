@@ -521,6 +521,7 @@ html {
     position: relative;
     color: #ffffff; }
     .main_sect .main_sect_container .ball_con {
+      position: relative;
       margin-top: 200px;
       background: transparent;
       display: -webkit-box;
@@ -531,8 +532,7 @@ html {
       -webkit-align-items: flex-end;
           -ms-flex-align: end;
               align-items: flex-end;
-      list-style: none;
-      opacity: 0; }
+      list-style: none; }
       @media (min-width: 768px) and (max-width: 991px) {
         .main_sect .main_sect_container .ball_con {
           margin-top: -65px; } }
@@ -543,7 +543,10 @@ html {
         .main_sect .main_sect_container .ball_con {
           margin-top: 55px; } }
       .main_sect .main_sect_container .ball_con .ball {
-        margin-left: 12px; }
+        margin-left: 12px;
+        -webkit-transition: transfrom .5s ease;
+        -o-transition: transfrom .5s ease;
+        transition: transfrom .5s ease; }
         @media (min-width: 768px) and (max-width: 991px) {
           .main_sect .main_sect_container .ball_con .ball {
             -webkit-animation: none;
@@ -798,16 +801,16 @@ html {
 
 @-webkit-keyframes animatedBackground {
   0% {
-    -webkit-transform: translate(-230px, 0px);
-            transform: translate(-230px, 0px); }
+    -webkit-transform: translate(-140px, 0px);
+            transform: translate(-140px, 0px); }
   100% {
     -webkit-transform: translate(0px, -160px);
             transform: translate(0px, -160px); } }
 
 @keyframes animatedBackground {
   0% {
-    -webkit-transform: translate(-230px, 0px);
-            transform: translate(-230px, 0px); }
+    -webkit-transform: translate(-140px, 0px);
+            transform: translate(-140px, 0px); }
   100% {
     -webkit-transform: translate(0px, -160px);
             transform: translate(0px, -160px); } }
@@ -867,6 +870,50 @@ html {
   100% {
     -webkit-transform: translate(0px, 3px);
             transform: translate(0px, 3px); } }
+
+@-webkit-keyframes ballFirst {
+  0% {
+    -webkit-transform: translate(200%, 76%);
+            transform: translate(200%, 76%);
+    opacity: 0.2; }
+  25% {
+    -webkit-transform: translate(150%, 52%);
+            transform: translate(150%, 52%);
+    opacity: 0.4; }
+  50% {
+    -webkit-transform: translate(100%, 45%);
+            transform: translate(100%, 45%);
+    opacity: 0.6; }
+  75% {
+    -webkit-transform: translate(50%, 38%);
+            transform: translate(50%, 38%);
+    opacity: 0.8; }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    opacity: 1; } }
+
+@keyframes ballFirst {
+  0% {
+    -webkit-transform: translate(200%, 76%);
+            transform: translate(200%, 76%);
+    opacity: 0.2; }
+  25% {
+    -webkit-transform: translate(150%, 52%);
+            transform: translate(150%, 52%);
+    opacity: 0.4; }
+  50% {
+    -webkit-transform: translate(100%, 45%);
+            transform: translate(100%, 45%);
+    opacity: 0.6; }
+  75% {
+    -webkit-transform: translate(50%, 38%);
+            transform: translate(50%, 38%);
+    opacity: 0.8; }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    opacity: 1; } }
 
 @-webkit-keyframes MouseOn {
   0 {
@@ -960,6 +1007,16 @@ html {
       -webkit-transform: translate(-41%, 99%) scale(0.8);
           -ms-transform: translate(-41%, 99%) scale(0.8);
               transform: translate(-41%, 99%) scale(0.8); } }
+
+.main_sect .main_sect_container .ball_con li:first-child {
+  opacity: 0;
+  -webkit-animation: ballFirst 1.5s linear 6s forwards;
+          animation: ballFirst 1.5s linear 6s forwards; }
+
+.main_sect .main_sect_container .ball_con li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: ballFirst 1.5s linear 8s forwards;
+          animation: ballFirst 1.5s linear 8s forwards; }
 
 .ball_1 {
   -webkit-animation: Ball 2s linear forwards infinite;
