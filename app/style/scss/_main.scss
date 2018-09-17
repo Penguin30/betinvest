@@ -251,7 +251,7 @@ html {
 			@include paddingLR(66px, 66px);
 			font-size: 0.875em;
 			text-align: center;
-			background-color: #000000ab;
+			/* background-color: #000000ab; */
 				@include md{
 					position: relative;
 					top: -50px;
