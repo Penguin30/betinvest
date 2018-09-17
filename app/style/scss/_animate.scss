@@ -155,23 +155,23 @@
 
 .main_sect .main_sect_container .ball_con li:first-child {
 	opacity: 0;
-	animation: ballFirst .9s ease-in-out 4.5s forwards;
+	animation: ballFirst .9s linear 4.5s forwards;
 }
 .main_sect .main_sect_container .ball_con li:nth-child(2) {
 	opacity: 0;
-	animation: ballSecond .9s ease-in-out 5.5s forwards;
+	animation: ballSecond .9s linear 5.1s forwards;
 }
 .main_sect .main_sect_container .ball_con li:nth-child(3) {
 	opacity: 0;
-	animation: ballFirst .9s ease-in-out 6.5s forwards;
+	animation: ballFirst .9s linear 5.7s forwards;
 }
 .main_sect .main_sect_container .ball_con li:nth-child(4) {
 	opacity: 0;
-	animation: ballFirst .9s ease-in-out 7.5s forwards;
+	animation: ballFirst .9s linear 6.3s forwards;
 }
 .main_sect .main_sect_container .ball_con li:nth-child(5) {
 	opacity: 0;
-	animation: ballFirst .9s ease-in-out 8.5s forwards;
+	animation: ballFirst .9s linear 6.9s forwards;
 }
 
 .ball_1{
@@ -243,7 +243,7 @@
 	animation-direction: alternate;
 	animation-timing-function: cubic-bezier(0.3,0.5,0.2,0.7);
 	animation-iteration-count: infinite;
-	animation-delay: 10.8s;
+	animation-delay: 9.8s;
 	@include md{
 		transform: translate(-813%, 823%) scale(0.8);
 	}	

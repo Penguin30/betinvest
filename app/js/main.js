@@ -72,10 +72,10 @@ $(window).load(function(){
 		$('#preloader').addClass("d-none");
 		setTimeout(flyCar, 2800);
 		setTimeout(ballIn, 3000);
-		setTimeout(header, 10200);
-		setTimeout(mainT, 11000);
-		setTimeout(hexagonBlock, 11200);
-		setTimeout(scroll, 11200);
+		setTimeout(header, 7500);
+		setTimeout(mainT, 9200);
+		setTimeout(hexagonBlock, 9200);
+		setTimeout(scroll, 9200);
 	}, 500);
 });
 

@@ -1052,28 +1052,28 @@ html {
 
 .main_sect .main_sect_container .ball_con li:first-child {
   opacity: 0;
-  -webkit-animation: ballFirst .9s ease-in-out 4.5s forwards;
-          animation: ballFirst .9s ease-in-out 4.5s forwards; }
+  -webkit-animation: ballFirst .9s linear 4.5s forwards;
+          animation: ballFirst .9s linear 4.5s forwards; }
 
 .main_sect .main_sect_container .ball_con li:nth-child(2) {
   opacity: 0;
-  -webkit-animation: ballSecond .9s ease-in-out 5.5s forwards;
-          animation: ballSecond .9s ease-in-out 5.5s forwards; }
+  -webkit-animation: ballSecond .9s linear 5.1s forwards;
+          animation: ballSecond .9s linear 5.1s forwards; }
 
 .main_sect .main_sect_container .ball_con li:nth-child(3) {
   opacity: 0;
-  -webkit-animation: ballFirst .9s ease-in-out 6.5s forwards;
-          animation: ballFirst .9s ease-in-out 6.5s forwards; }
+  -webkit-animation: ballFirst .9s linear 5.7s forwards;
+          animation: ballFirst .9s linear 5.7s forwards; }
 
 .main_sect .main_sect_container .ball_con li:nth-child(4) {
   opacity: 0;
-  -webkit-animation: ballFirst .9s ease-in-out 7.5s forwards;
-          animation: ballFirst .9s ease-in-out 7.5s forwards; }
+  -webkit-animation: ballFirst .9s linear 6.3s forwards;
+          animation: ballFirst .9s linear 6.3s forwards; }
 
 .main_sect .main_sect_container .ball_con li:nth-child(5) {
   opacity: 0;
-  -webkit-animation: ballFirst .9s ease-in-out 8.5s forwards;
-          animation: ballFirst .9s ease-in-out 8.5s forwards; }
+  -webkit-animation: ballFirst .9s linear 6.9s forwards;
+          animation: ballFirst .9s linear 6.9s forwards; }
 
 .ball_1 {
   -webkit-animation: bounce 1s;
@@ -1192,8 +1192,8 @@ html {
           animation-timing-function: cubic-bezier(0.3, 0.5, 0.2, 0.7);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-delay: 10.8s;
-          animation-delay: 10.8s; }
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s; }
   @media (min-width: 768px) and (max-width: 991px) {
     .ball_5 {
       -webkit-transform: translate(-813%, 823%) scale(0.8);
