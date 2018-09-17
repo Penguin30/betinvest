@@ -48,7 +48,9 @@ var flyCar = function(){
 var logoHeader = $('.header .logo_container');
 var menuList = $('.navbar-expand-lg .navbar-collapse');
 var header = function(){
-	$("#header").removeClass("d-none").addClass("d-block animated fadeInDown");
+	setTimeout(function() {
+		$("#header").removeClass("d-none").addClass("d-block animated fadeInDown");
+	}, 200);
 	setTimeout(function() {
 		logoHeader.removeClass('d-none').addClass('d-block animated fadeInDown');
 		menuList.addClass('d-block animated fadeInRight');
@@ -70,10 +72,10 @@ $(window).load(function(){
 		$('#preloader').addClass("d-none");
 		setTimeout(flyCar, 2800);
 		setTimeout(ballIn, 3000);
-		setTimeout(header, 7500);
-		setTimeout(mainT, 9250);
-		setTimeout(hexagonBlock, 9250);
-		setTimeout(scroll, 9250);
+		setTimeout(header, 10200);
+		setTimeout(mainT, 11000);
+		setTimeout(hexagonBlock, 11200);
+		setTimeout(scroll, 11200);
 	}, 500);
 });
 
