@@ -58,7 +58,6 @@
 		}
 
 		.hexagon{
-			height: 23vh;
 			&:before, &:after{
 				margin-left: 0;
 			}
@@ -91,13 +90,17 @@
 				@inlcude md {
 					@include paddingLR(40px, 40px);
 				}
+				h3{
+					margin-top: 112px;
+					margin-bottom: 26px;
+				}
 				.hex_title{
 					@extend %USHText;
 					font-size: 1.5em;
 					margin-bottom: 40px;
 				}
 				.hex_text{
-					height: 13.4vh;
+					height: 124px;
 				}
 			}
 			.sect_six_btn{

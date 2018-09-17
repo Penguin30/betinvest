@@ -39,7 +39,7 @@
 				@extend %USHText;
 				font-size: 1.5em;
 			}
-			margin-top: 8%;
+			margin-top: 0%;
 			margin-left: 35px;
 			@include xs{
 				margin-left: calc(17% - 50px);
@@ -87,6 +87,7 @@
 			text-align: center;
 			
 			.hex_tittle{
+				margin-top: 97px;
 				margin-bottom: 26px;
 				font-size: 1.875em;
 			}
@@ -97,7 +98,7 @@
 //			}
 //		}
 		.info_btn{
-			transform: translate(43%, 10%);
+			transform: translate(46%, 10%);
 			@include xs{
 				transform: translate(45%, -25%);
 			}

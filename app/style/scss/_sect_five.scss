@@ -59,12 +59,13 @@
 			text-align: center;
 			.hex_tittle{
 				@extend %USHText;
+				margin-top: 96px;
 				margin-bottom: 26px;
 				font-size: 1.875em;
 			}
 		}
 		.info_btn{
-			transform: translate(45%, 10%);
+			transform: translate(46%, 10%);
 			@include md {
 				margin: -8vh 57px !important;
 			}
@@ -76,6 +77,7 @@
 			}
 		}
 		.img_cont{
+			margin-top: 90px;
 			margin-left: 3rem;
 			@include lg {
 				margin-left: -3rem;
@@ -124,7 +126,7 @@
 				margin: -59% 10% 24%;
 			}
 			img{
-				height: 16vh;
+				height: 21vh;
 				@include md{
 				}
 			}

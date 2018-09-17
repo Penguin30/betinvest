@@ -275,6 +275,7 @@ html {
 
 			.info_tittle{
 				@extend %USHText;
+				margin-top: 109px;
 				margin-bottom: 10px;
 				font-size: 1.875em;
 				@include md{
@@ -291,7 +292,8 @@ html {
 				@extend %RobotoText;
 				font-family: "Roboto", Arial, sans-serif;
 				font-weight: 400;
-				height: 180px;
+				height: 122px;
+				margin-bottom: 23px;
 				overflow-x: hidden;
     			overflow-y: scroll;
     			@include lg{

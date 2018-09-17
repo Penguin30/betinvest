@@ -261,7 +261,7 @@ a {
         background: url(../../img/main_nav.png) 0px 0px; }
 
 .hex_text {
-  height: 145px;
+  height: 119px;
   overflow-x: hidden;
   overflow-y: scroll; }
   @media (min-width: 320px) and (max-width: 575px) {
@@ -654,6 +654,7 @@ html {
           margin-left: 108px;
           margin-top: 400px; } }
       .main_sect .main_sect_container .info_about .info_tittle {
+        margin-top: 109px;
         margin-bottom: 10px;
         font-size: 1.875em; }
         @media (min-width: 768px) and (max-width: 991px) {
@@ -666,7 +667,8 @@ html {
       .main_sect .main_sect_container .info_about .info_about_text {
         font-family: "Roboto", Arial, sans-serif;
         font-weight: 400;
-        height: 180px;
+        height: 122px;
+        margin-bottom: 23px;
         overflow-x: hidden;
         overflow-y: scroll; }
         @media (min-width: 992px) and (max-width: 1199px) {
@@ -1305,7 +1307,7 @@ html {
     .sect_two .sect_two_container .hexagon .info_btn {
       margin: 10% 34%; }
     .sect_two .sect_two_container .sect_two_hex_1 {
-      margin-top: 8%;
+      margin-top: 4%;
       margin-left: 35px; }
       @media (min-width: 576px) and (max-width: 767px) {
         .sect_two .sect_two_container .sect_two_hex_1 {
@@ -1318,9 +1320,12 @@ html {
           margin-top: -9%;
           margin-left: 2px; } }
       .sect_two .sect_two_container .sect_two_hex_1 h3 {
+        margin-top: 118px;
         margin-bottom: 27px; }
       .sect_two .sect_two_container .sect_two_hex_1 .hex_text {
-        font-size: 1em; }
+        font-size: 1em;
+        height: 94px;
+        margin-bottom: 43px; }
         @media (min-width: 768px) and (max-width: 991px) {
           .sect_two .sect_two_container .sect_two_hex_1 .hex_text {
             height: 100px; } }
@@ -1348,7 +1353,8 @@ html {
           margin-top: 9%;
           margin-left: 221px; } }
       .sect_two .sect_two_container .sect_two_hex_2 h3 {
-        margin-bottom: 57px; }
+        margin-bottom: 40px;
+        margin-top: 116px; }
         @media (min-width: 768px) and (max-width: 991px) {
           .sect_two .sect_two_container .sect_two_hex_2 h3 {
             margin-bottom: 30px; } }
@@ -1403,9 +1409,9 @@ html {
           .sect_two .sect_two_container .watch_video .video_btn {
             margin: -166px 85px; } }
     .sect_two .sect_two_container .sect_two_hex_4 {
-      -webkit-transform: translate(71%, -48%);
-          -ms-transform: translate(71%, -48%);
-              transform: translate(71%, -48%); }
+      -webkit-transform: translate(71%, -40%);
+          -ms-transform: translate(71%, -40%);
+              transform: translate(71%, -40%); }
       @media (min-width: 768px) and (max-width: 991px) {
         .sect_two .sect_two_container .sect_two_hex_4 {
           -webkit-transform: translate(36%, -31%);
@@ -1422,9 +1428,12 @@ html {
               -ms-transform: translate(47%, -32%);
                   transform: translate(47%, -32%); } }
       .sect_two .sect_two_container .sect_two_hex_4 h3 {
+        margin-top: 86px;
         margin-bottom: 26px; }
       .sect_two .sect_two_container .sect_two_hex_4 .hex_text {
-        font-size: 0.86em; }
+        font-size: 0.86em;
+        height: 95px;
+        margin-bottom: 38px; }
         @media (min-width: 768px) and (max-width: 991px) {
           .sect_two .sect_two_container .sect_two_hex_4 .hex_text {
             height: 100px; } }
@@ -1488,7 +1497,7 @@ html {
       margin-top: 20%;
       margin-left: 93px; }
     .sect_t .sect_t_cont .hex_1 {
-      margin-top: 8%;
+      margin-top: 0%;
       margin-left: 35px; }
       @media (min-width: 320px) and (max-width: 575px) {
         .sect_t .sect_t_cont .hex_1 {
@@ -1528,6 +1537,7 @@ html {
       padding-right: 45px;
       text-align: center; }
       .sect_t .sect_t_cont .t_hex_info .hex_tittle {
+        margin-top: 97px;
         margin-bottom: 26px;
         font-size: 1.875em; }
       @media (min-width: 320px) and (max-width: 575px) {
@@ -1633,7 +1643,7 @@ html {
           margin-left: 220px;
           margin-top: 18%; } }
     .sect_four .sect_four_cont .hex_1 {
-      margin-top: 8%;
+      margin-top: 0%;
       margin-left: 35px; }
       .sect_four .sect_four_cont .hex_1 .hex_tittle {
         font-size: 1.5em; }
@@ -1689,12 +1699,13 @@ html {
       padding-right: 66px;
       text-align: center; }
       .sect_four .sect_four_cont .t_hex_info .hex_tittle {
+        margin-top: 97px;
         margin-bottom: 26px;
         font-size: 1.875em; }
     .sect_four .sect_four_cont .info_btn {
-      -webkit-transform: translate(43%, 10%);
-          -ms-transform: translate(43%, 10%);
-              transform: translate(43%, 10%); }
+      -webkit-transform: translate(46%, 10%);
+          -ms-transform: translate(46%, 10%);
+              transform: translate(46%, 10%); }
       @media (min-width: 320px) and (max-width: 575px) {
         .sect_four .sect_four_cont .info_btn {
           -webkit-transform: translate(45%, -25%);
@@ -1760,12 +1771,13 @@ html {
       padding-right: 66px;
       text-align: center; }
       .sect_five .sect_five_cont .t_hex_info .hex_tittle {
+        margin-top: 96px;
         margin-bottom: 26px;
         font-size: 1.875em; }
     .sect_five .sect_five_cont .info_btn {
-      -webkit-transform: translate(45%, 10%);
-          -ms-transform: translate(45%, 10%);
-              transform: translate(45%, 10%); }
+      -webkit-transform: translate(46%, 10%);
+          -ms-transform: translate(46%, 10%);
+              transform: translate(46%, 10%); }
       @media (min-width: 768px) and (max-width: 991px) {
         .sect_five .sect_five_cont .info_btn {
           margin: -8vh 57px !important; } }
@@ -1778,6 +1790,7 @@ html {
               -ms-transform: translate(44%, -20%);
                   transform: translate(44%, -20%); } }
     .sect_five .sect_five_cont .img_cont {
+      margin-top: 90px;
       margin-left: 3rem; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .sect_five .sect_five_cont .img_cont {
@@ -1814,7 +1827,7 @@ html {
       .sect_five .sect_five_cont .img_cont .hex_tb_5 {
         margin: -59% 10% 24%; }
       .sect_five .sect_five_cont .img_cont img {
-        height: 16vh; }
+        height: 21vh; }
 
 .sect_six {
   position: relative;
@@ -1869,10 +1882,8 @@ html {
           margin-left: 7px; }
           .sect_six .sect_six_cont .point .hex_socials .social_icon:hover {
             color: #f3a10d; }
-    .sect_six .sect_six_cont .hexagon {
-      height: 23vh; }
-      .sect_six .sect_six_cont .hexagon:before, .sect_six .sect_six_cont .hexagon:after {
-        margin-left: 0; }
+    .sect_six .sect_six_cont .hexagon:before, .sect_six .sect_six_cont .hexagon:after {
+      margin-left: 0; }
     .sect_six .sect_six_cont .hex_1 {
       position: absolute;
       bottom: 9%;
@@ -1902,11 +1913,14 @@ html {
   .sect_six .sect_six_cont .hex_1 .t_hex_info {
     padding-left: 40px;
     padding-right: 40px; } }
+        .sect_six .sect_six_cont .hex_1 .t_hex_info h3 {
+          margin-top: 112px;
+          margin-bottom: 26px; }
         .sect_six .sect_six_cont .hex_1 .t_hex_info .hex_title {
           font-size: 1.5em;
           margin-bottom: 40px; }
         .sect_six .sect_six_cont .hex_1 .t_hex_info .hex_text {
-          height: 13.4vh; }
+          height: 124px; }
       .sect_six .sect_six_cont .hex_1 .sect_six_btn {
         z-index: 10;
         position: absolute;

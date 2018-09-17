@@ -46,7 +46,7 @@
 			}
 		}
 		.hex_1{
-			margin-top: 8%;
+			margin-top: 0%;
 			margin-left: 35px;
 			@include xs{
 				margin-top: calc(17% - 50px);
@@ -84,6 +84,7 @@
 			text-align: center;
 			.hex_tittle{
 				@extend %USHText;
+				margin-top: 97px;
 				margin-bottom: 26px;
 				font-size: 1.875em;
 			}
