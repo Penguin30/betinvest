@@ -231,28 +231,34 @@ a{
 
 //hexagon
 .hexagon{
-  position: relative;
-  width: 432px; 
-  height: 249.42px;
-  background-color: #000000ab;
-  margin: 115.47px 0;
-  @include md{
-      width: 383px;
-      height: 235.64px;
-      margin: 93.82px 0;
-  }
-  @include sm{
-      width: 325px; 
-      height: 187.64px;
-      margin: 93.82px 0;
-  }  
-    @include xs{
-    	width: 325px; 
-  		height: 195px;
-  		margin: 74.48px 0;
-    }
+	background-image: url("../../img/hexagon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 86%;
+	position: relative;
+	width: 432px; 
+	height: 431.42px;
+	margin: 0;
+	h2{
+		margin-top: 20%;
+	}
+	@include md{
+		width: 383px;
+		height: 235.64px;
+		margin: 93.82px 0;
+	}
+	@include sm{
+		width: 325px; 
+		height: 187.64px;
+		margin: 93.82px 0;
+	}
+	@include xs{
+		width: 325px; 
+		height: 195px;
+		margin: 74.48px 0;
+	}
 }
-.hexagon:before,
+/* .hexagon:before,
 .hexagon:after {
   content: "";
   position: absolute;
@@ -300,7 +306,7 @@ a{
   @include xs{
     border-top: 74.48px solid #000000ab;
   }
-}
+} */
 .main_nav{ 
 	@extend %USHText;
 	position: absolute;
