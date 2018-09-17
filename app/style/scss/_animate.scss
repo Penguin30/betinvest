@@ -25,18 +25,10 @@
     100% {
         transform: scale(1.0)
     }
-
 }
-@keyframes Ball{
-    0 {
-        transform: translate(0px, 30px)
-    }
-    50%{
-		transform: translate(0px, -39px)
-    }
-    100% {
-        transform: translate(0px, 3px)
-    }
+@keyframes bounce{
+	from { transform: translate3d(0, 0, 0);     }
+	to   { transform: translate3d(0, 50px, 0); }
 }
 
 @keyframes ballFirst {
@@ -131,6 +123,9 @@
 
 
 }
+.fly-car-animation-duration{
+	animation-duration: 5s;
+}
 
 .main_sect .main_sect_container .ball_con li:first-child {
 	opacity: 0;
@@ -142,7 +137,10 @@
 }
 
 .ball_1{
-	animation: Ball 2s linear forwards infinite;
+	animation: bounce 1s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.3,0.5,0.2,0.7);
+	animation-iteration-count: infinite;
 	@include md{
 		transform: translate(-89%, 213%) scale(0.6);
 	}
@@ -154,8 +152,11 @@
 	}
 }
 .ball_2{
-	animation: Ball 2.9s linear forwards infinite;
-	animation-delay: 0.5s;
+	animation: bounce 1s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.3,0.5,0.2,0.7);
+	animation-iteration-count: infinite;
+	animation-delay: 0.2s;
 	@include md{
 		transform: translate(-93%, 217%) scale(0.6);
 	}	
@@ -167,8 +168,11 @@
 	}
 }
 .ball_3{
-	animation: Ball 2.1s linear forwards infinite;
-	animation-delay: 0s;
+	animation: bounce 1s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.3,0.5,0.2,0.7);
+	animation-iteration-count: infinite;
+	animation-delay: 0.4s;
 	@include md{
 		transform: translate(-161%, 238%) scale(0.6);
 	}	
@@ -180,8 +184,11 @@
 	}
 }
 .ball_4{
-	animation: Ball 2.9s linear forwards infinite;
-	animation-delay: 0s;
+	animation: bounce 1s;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.3,0.5,0.2,0.7);
+	animation-iteration-count: infinite;
+	animation-delay: 0.6s;
 	@include md{
 		transform: translate(-361%, 395%) scale(0.6);
 	}
@@ -193,8 +200,11 @@
 	}
 }
 .ball_5{
-	animation: Ball 2.9s linear forwards infinite;
-	animation-delay: 0.5s;
+	animation: bounce infifn;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.3,0.5,0.2,0.7);
+	animation-iteration-count: infinite;
+	animation-delay: 0.8s;
 	@include md{
 		transform: translate(-813%, 823%) scale(0.8);
 	}	
