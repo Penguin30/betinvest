@@ -796,9 +796,6 @@ html {
     height: 2px;
     width: 10px; }
 
-.navbar-expand-lg .navbar-collapse {
-  display: none; }
-
 @-webkit-keyframes animatedBackground {
   0% {
     -webkit-transform: translate(-140px, 0px);
