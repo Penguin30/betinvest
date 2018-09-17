@@ -276,7 +276,7 @@ a{
 
 .hexagon:before {
   bottom: 100%;
-  border-bottom: 115.47px solid #000000ab;
+  border-bottom: 120.47px solid #000000ab;
   @include md{
     border-bottom: 93.82px solid #000000ab;
   }
@@ -290,7 +290,7 @@ a{
 .hexagon:after {
   top: 100%;
   margin-left: -50%;
-  border-top: 115.47px solid #000000ab;
+  border-top: 120.47px solid #000000ab;
   @include md{
     border-top: 93.82px solid #000000ab;
   }
