@@ -294,8 +294,8 @@ a {
       -ms-flex-align: center;
           align-items: center; }
   #preloader .preloader_gif {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden; }
   #preloader .preloader_gif::-webkit-scrollbar {
     width: 0px; }
@@ -629,7 +629,7 @@ html {
       padding-right: 66px;
       font-size: 0.875em;
       text-align: center;
-      background-color: #000000ab; }
+      /* background-color: #000000ab; */ }
       @media (min-width: 768px) and (max-width: 991px) {
         .main_sect .main_sect_container .info_about {
           position: relative;
