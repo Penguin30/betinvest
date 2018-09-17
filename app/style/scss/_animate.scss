@@ -2,8 +2,8 @@
 
 
 @keyframes animatedBackground {
-    0 {
-        transform: translate(-550px, 0px)
+    0% {
+        transform: translate(-230px, 0px)
     }
     100% {
         transform: translate( 0px, -160px)
@@ -11,7 +11,7 @@
 }
 @keyframes balkon {
 
-    0 {
+    0% {
     	transform: scale(1.04)
     }
 	25% {
@@ -170,10 +170,10 @@
 	}
 }
 #earth_1_img{
-
 	width:100%;
 	top: -10%;
-	animation: animatedBackground 7.0s linear forwards;
+	animation: animatedBackground 9.3s linear forwards;
+	transform: scale(3);
 	@include md{
 		animation: none;
 		transform: translate(-13%, 30%) scale(2.5);

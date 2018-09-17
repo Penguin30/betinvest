@@ -794,23 +794,23 @@ html {
     width: 10px; }
 
 @-webkit-keyframes animatedBackground {
-  0 {
-    -webkit-transform: translate(-550px, 0px);
-            transform: translate(-550px, 0px); }
+  0% {
+    -webkit-transform: translate(-230px, 0px);
+            transform: translate(-230px, 0px); }
   100% {
     -webkit-transform: translate(0px, -160px);
             transform: translate(0px, -160px); } }
 
 @keyframes animatedBackground {
-  0 {
-    -webkit-transform: translate(-550px, 0px);
-            transform: translate(-550px, 0px); }
+  0% {
+    -webkit-transform: translate(-230px, 0px);
+            transform: translate(-230px, 0px); }
   100% {
     -webkit-transform: translate(0px, -160px);
             transform: translate(0px, -160px); } }
 
 @-webkit-keyframes balkon {
-  0 {
+  0% {
     -webkit-transform: scale(1.04);
             transform: scale(1.04); }
   25% {
@@ -827,7 +827,7 @@ html {
             transform: scale(1); } }
 
 @keyframes balkon {
-  0 {
+  0% {
     -webkit-transform: scale(1.04);
             transform: scale(1.04); }
   25% {
@@ -1064,8 +1064,11 @@ html {
 #earth_1_img {
   width: 100%;
   top: -10%;
-  -webkit-animation: animatedBackground 7.0s linear forwards;
-          animation: animatedBackground 7.0s linear forwards; }
+  -webkit-animation: animatedBackground 9.3s linear forwards;
+          animation: animatedBackground 9.3s linear forwards;
+  -webkit-transform: scale(3);
+      -ms-transform: scale(3);
+          transform: scale(3); }
   @media (min-width: 768px) and (max-width: 991px) {
     #earth_1_img {
       -webkit-animation: none;
